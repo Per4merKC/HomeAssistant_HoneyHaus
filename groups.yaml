@@ -1,0 +1,61 @@
+living_room_card:
+  name: Living Room
+  entities:
+  - light.tree_light_22
+  - light.north_can_light_63
+  - light.south_can_light_65
+dining_room_card:
+  name: Dining Room
+  entities:
+  - climate.thermostat_4
+  - light.chandelier_10
+kitchen_group:
+  name: Kitchen
+  entities:
+  - light.kitchen_lights_26
+  - switch.toaster_34
+bathroom_group:
+  name: Bathroom
+  entities:
+  - light.over_sink_light_53
+  - sensor.eye_lux_73
+  - sensor.eye_temperature_72
+  - binary_sensor.eye_motion_71
+basement_group:
+  name: Basement/Stairs
+  entities:
+  - binary_sensor.stairway_motion_80
+  - light.stairwell_light_78
+  - binary_sensor.flood_sensor_64
+  - switch.washer_power_strip_36
+  - switch.washer_fan_38
+  view: false
+guest_room_group:
+  name: Guest Bedroom
+  entities:
+  - light.guest_room_light_27
+information_group:
+  name: Information
+  entities:
+  - sun.sun
+  - sensor.moon
+  - sensor.s
+  - sensor.aapl
+  - sensor.cpu_speed
+iphone_info_group:
+  name: iPhone Stats
+  entities:
+  - sensor.je_iphone_7_battery_state
+  - sensor.je_iphone_7_battery_level
+speed_test_group:
+  name: Speedtest
+  entities:
+  - sensor.speedtest_ping
+  - sensor.speedtest_upload
+  - sensor.speedtest_download
+alarm_group:
+  name: Alarm Mode Devices
+  entities:
+  - switch.eye_motion_71
+  - switch.stairway_motion_80
+  - switch.flood_sensor_64

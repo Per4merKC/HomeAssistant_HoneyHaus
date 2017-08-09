@@ -1,0 +1,15 @@
+# Devices
+switch.washer_fan_38:
+  icon: mdi:fan
+
+sensor.s:
+  friendly_name: Sprint
+
+sensor.aapl:
+  friendly_name: Apple
+
+sensor.je_iphone_7_battery_level:
+  friendly_name: John's Batery Level
+
+sensor.je_iphone_7_battery_state:
+  friendly_name: John's Charging Status

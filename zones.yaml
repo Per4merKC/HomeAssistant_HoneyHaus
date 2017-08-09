@@ -1,0 +1,15 @@
+- name: Work
+  latitude: 38.9169821
+  longitude: -94.65785979999998
+  icon: mdi:cellphone-iphone
+
+- name: W.E. Fit
+  latitude: 38.9636027
+  longitude: -94.66575669999997
+  icon: mdi:dumbbell
+
+- name: Matt Ross Community Center
+  latitude: 38.9822845
+  longitude: -94.66922260000001
+  icon: mdi:dumbbell
+  
