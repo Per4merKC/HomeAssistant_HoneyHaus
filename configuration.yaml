@@ -81,6 +81,12 @@ vera:
 sensor:
   - platform: yr
   - platform: cpuspeed
+  - platform: systemmonitor
+    resources: 
+      - type: disk_use_percent
+        arg: /
+      - type: memory_use_percent
+      - type: processor_use
   - platform: moon
   - platform: yahoo_finance
     symbols:

@@ -3,3 +3,22 @@
 This is my configuration... I'm new to Home-Assistant, but have roots back in the [Mister House](http://misterhouse.net) days. :-)
 
 I plan on trying to recreate some of the awesome scripts from those days and integrating them with modern technology and convienence.
+
+## My Setup:
+* Raspberry Pi 3
+* Vera Controler 
+  * X10 CM11a Interface
+    * Dining Room Chandelier
+    * Kitchen Lights
+    * Bathroom Sing Light
+    * Guest Bedroom Light
+    * Toaster *(wall plug is not utilized in any automations)
+  * Z-Wave
+    * Fibaro Eye
+    * 3 Leviton Plug-In Dimmer Modules
+    * Aeotec Recessed Door Sensor
+    * 2 BeSense Ceiling PIR Motion Detectors
+    * GE Outdoor Module
+  * Honeywell WiFi Thermostat
+
+

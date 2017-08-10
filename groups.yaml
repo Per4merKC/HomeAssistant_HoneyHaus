@@ -41,7 +41,6 @@ information_group:
   - sensor.moon
   - sensor.s
   - sensor.aapl
-  - sensor.cpu_speed
 iphone_info_group:
   name: iPhone Stats
   entities:
@@ -59,3 +58,11 @@ alarm_group:
   - switch.eye_motion_71
   - switch.stairway_motion_80
   - switch.flood_sensor_64
+pi_group:
+  name: Raspberry Pi
+  entities: 
+  - sensor.cpu_speed
+  - sensor.cpu_use
+  - sensor.disk_use_
+  - sensor.ram_use
+  
