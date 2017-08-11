@@ -1,1 +1,19 @@
-[]
+# - alias: Bathroom Light ON when Motion is ACTIVE
+#   trigger:
+#     platform: state
+#     entity_id: binary_sensor.eye_motion_71
+#     to: 'on'
+#   action:
+#     service: script.bathroom_motion_timer
+
+- action:
+  - alias: Turn on bathroom lights
+    service: script.bathroom_motion_timer
+  alias: Bathroom Motion Detected
+  id: '1502419040930'
+  trigger:
+  - entity_id: binary_sensor.eye_motion_71
+    from: 'off'
+    platform: state
+    to: 'on'
+
