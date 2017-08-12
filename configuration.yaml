@@ -44,6 +44,8 @@ updater:
 
 # Discover some devices automatically
 discovery:
+  ignore: 
+    - google_cast
 
 hassio:
 
