@@ -43,7 +43,8 @@ updater:
   # include_used_components: true
 
 # Discover some devices automatically
-#discovery:
+discovery:
+
 hassio:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
@@ -70,9 +71,9 @@ ios:
     name: iOSApp
     target: je_iphone
     
-# Text to speech
-#tts:  
-#  - platform: google
+#Text to speech
+tts:  
+ - platform: google
 
 vera:
   vera_controller_url: http://192.168.1.153:3480
@@ -105,6 +106,12 @@ sensor:
       - upload
 
 shopping_list:
+
+# hdmi_cec:
+#   devices:
+#     TV: 0.0.0.0
+#     Google: 1.0.0.0
+#     ATV: 0.0.1.0
 
 group: !include groups.yaml
 automation: !include automations.yaml
