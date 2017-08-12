@@ -1,6 +1,7 @@
 - action:
   - alias: Turn on bathroom lights
     service: script.bathroom_motion_timer
+  hide_entity: True
   alias: Bathroom Motion Detected
   id: '1502419040930'
   trigger:

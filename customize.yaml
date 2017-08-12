@@ -13,3 +13,6 @@ sensor.je_iphone_7_battery_level:
 
 sensor.je_iphone_7_battery_state:
   friendly_name: John's Charging Status
+
+sensor.yr_symbol:
+  friendly_name: Weather
