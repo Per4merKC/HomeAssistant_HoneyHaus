@@ -8,5 +8,5 @@
     platform: state
     from: 'off'
     to: 'on'
-  - hide_entity: true
+
 
