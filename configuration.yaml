@@ -76,6 +76,8 @@ ios:
 #Text to speech
 # tts:  
 #  - platform: google
+media_player:
+  - platform: roku
 
 vera:
   vera_controller_url: http://192.168.1.153:3480
