@@ -74,8 +74,8 @@ ios:
     target: je_iphone
     
 #Text to speech
-tts:  
- - platform: google
+# tts:  
+#  - platform: google
 
 vera:
   vera_controller_url: http://192.168.1.153:3480
