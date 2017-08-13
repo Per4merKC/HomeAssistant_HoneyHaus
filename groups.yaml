@@ -1,3 +1,6 @@
+# VIEWS (tabs)
+
+# GROUPS (cards)
 living_room_card:
   name: Living Room
   entities:
@@ -24,6 +27,7 @@ bathroom_group:
   - binary_sensor.eye_motion_71
 basement_group:
   name: Basement/Stairs
+  control: hidden
   entities:
   - binary_sensor.stairway_motion_80
   - light.stairwell_light_78

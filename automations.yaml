@@ -7,6 +7,7 @@
   trigger:
   - entity_id: binary_sensor.eye_motion_71
     platform: state
+    from: 'off'
     to: 'on'
 
 - action:
@@ -18,4 +19,5 @@
   trigger:
   - entity_id: binary_sensor.stairway_motion_80
     platform: state
+    from: 'off'
     to: 'on'

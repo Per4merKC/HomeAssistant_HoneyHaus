@@ -91,7 +91,6 @@ sensor:
     monitored_conditions: 
       - temperature
       - symbol
-      - forecast
   - platform: cpuspeed
   - platform: systemmonitor
     resources: 
