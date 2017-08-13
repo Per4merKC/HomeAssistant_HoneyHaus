@@ -1,4 +1,4 @@
-- name: Work
+- name: Sprint
   latitude: 38.9169821
   longitude: -94.65785979999998
   icon: mdi:cellphone-iphone
@@ -13,3 +13,12 @@
   longitude: -94.66922260000001
   icon: mdi:dumbbell
   
+- name: Farm
+  latitude: 38.539777
+  longitude: -94.753074
+  icon: mdi:cow
+
+- name: John's Parents
+  latitude: 39.231194
+  longitude: -94.686395
+  icon: mdi:house-variant
