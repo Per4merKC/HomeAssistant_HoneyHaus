@@ -3,11 +3,10 @@
     service: script.bathroom_motion_timer
   hide_entity: True
   alias: Bathroom Motion Detected
-  id: '1502419040930'
+  id: 'jwe001'
   trigger:
   - entity_id: binary_sensor.eye_motion_71
     platform: state
-    from: 'off'
     to: 'on'
 
 - action:
@@ -19,5 +18,4 @@
   trigger:
   - entity_id: binary_sensor.stairway_motion_80
     platform: state
-    from: 'off'
     to: 'on'

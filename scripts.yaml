@@ -19,7 +19,7 @@ bathroom_motion_timer:
         entity_id: script.bathroom_motion_helper
 
 # Basement Stairs
-basement_star_motion_helper:
+basement_stair_motion_helper:
   sequence:
     - delay:
         minutes: 3
