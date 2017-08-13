@@ -87,6 +87,11 @@ vera:
 
 sensor:
   - platform: yr
+    name: Weather
+    monitored_conditions: 
+      - temperature
+      - symbol
+      - forecast
   - platform: cpuspeed
   - platform: systemmonitor
     resources: 
