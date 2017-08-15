@@ -16,3 +16,15 @@ sensor.je_iphone_7_battery_state:
 
 sensor.yr_symbol:
   friendly_name: Weather
+
+binary_sensor.eye_motion_71:
+  friendly_name: Bathroom Motion
+  device_class: motion
+
+binary_sensor.stairway_motion_80:
+  friendly_name: Stairway Motion
+  device_class: motion
+
+binary_sensor.flood_sensor_64:
+  friendly_name: Stairway Motion
+  device_class: moisture
