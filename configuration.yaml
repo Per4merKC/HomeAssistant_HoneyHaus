@@ -72,7 +72,12 @@ ios:
   - platform: ios 
     name: iOSApp
     target: je_iphone
-    
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.1.1/24
+    track_new_devices: false
+
 #Text to speech
 # tts:  
 #  - platform: google
@@ -91,7 +96,6 @@ sensor:
     monitored_conditions: 
       - temperature
       - symbol
-  - platform: cpuspeed
   - platform: systemmonitor
     resources: 
       - type: disk_use_percent

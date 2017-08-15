@@ -7,6 +7,7 @@ living_room_card:
   - light.tree_light_22
   - light.north_can_light_63
   - light.south_can_light_65
+  - binary_sensor.front_door_92
 dining_room_card:
   name: Dining Room
   entities:
@@ -63,6 +64,7 @@ alarm_group:
   - switch.eye_motion_71
   - switch.stairway_motion_80
   - switch.flood_sensor_64
+  - switch.front_door_92
 pi_group:
   name: Raspberry Pi
   entities: 

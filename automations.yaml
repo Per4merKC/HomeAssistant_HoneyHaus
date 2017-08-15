@@ -1,23 +1,71 @@
-- action:
-  - alias: Turn on bathroom lights
-    service: script.bathroom_motion_timer
-  hide_entity: True
+- id: jwe001
   alias: Bathroom Motion Detected
-  id: 'jwe001'
   trigger:
   - entity_id: binary_sensor.eye_motion_71
     platform: state
     from: 'off'
     to: 'on'
+  action:
+  - alias: Turn on bathroom lights
+    service: script.bathroom_motion_timer
+  hide_entity: true
 
-- action:
-  - alias: Turn on basement stairwell lights
-    service: script.basement_stair_motion_timer
-  hide_entity: True
+- id: jwe002
   alias: Stairwell Motion Detected
-  id: 'jwe002'
   trigger:
   - entity_id: binary_sensor.stairway_motion_80
     platform: state
     from: 'off'
     to: 'on'
+  action:
+  - alias: Turn on basement stairwell lights
+    service: script.basement_stair_motion_timer
+  hide_entity: true
+
+- id: 'jwe003'
+  alias: Front Door - Not Home
+  trigger:
+  - entity_id: binary_sensor.front_door_92
+    platform: state
+    from: 'off'
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: device_tracker.rb_iphone
+    state: not_home
+  - condition: state
+    entity_id: device_tracker.je_iphone
+    state: not_home
+  action:
+  - alias: Intruder Alert - Front Door
+    data:
+      message: Front door opened when nobody is home
+      title: Front Door
+    service: notify.ios_je_iphone
+  hide_entity: true
+
+- id: 'jwe004'
+  alias: HVAC on and Door Open Long
+  trigger:
+    - entity_id: binary_sensor.front_door_92
+      platform: state
+      from: 'off'
+      to: 'on'
+      for: 
+        minutes: 10
+  condition:
+    condition: or
+    conditions: 
+      - condition: state
+        entity_id: climate.thermostat_4
+        state: heat
+      - condition: state
+        entity_id: climate.thermostat_4
+        state: cool
+  action:
+  - alias: Intruder Alert - Front Door
+    data:
+      message: Front door open and HVAC is running
+      title: Energy Alert
+    service: notify.ios_je_iphone
+  hide_entity: true
