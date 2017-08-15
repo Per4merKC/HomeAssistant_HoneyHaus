@@ -26,5 +26,5 @@ binary_sensor.stairway_motion_80:
   device_class: motion
 
 binary_sensor.flood_sensor_64:
-  friendly_name: Stairway Motion
+  friendly_name: Basement Flood
   device_class: moisture
