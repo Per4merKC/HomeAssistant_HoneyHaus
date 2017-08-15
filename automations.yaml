@@ -22,7 +22,7 @@
     service: script.basement_stair_motion_timer
   hide_entity: true
 
-- id: 'jwe003'
+- id: jwe003
   alias: Front Door - Not Home
   trigger:
   - entity_id: binary_sensor.front_door_92
@@ -44,7 +44,7 @@
     service: notify.ios_je_iphone
   hide_entity: true
 
-- id: 'jwe004'
+- id: jwe004
   alias: HVAC on and Door Open Long
   trigger:
     - entity_id: binary_sensor.front_door_92
@@ -69,3 +69,4 @@
       title: Energy Alert
     service: notify.ios_je_iphone
   hide_entity: true
+
