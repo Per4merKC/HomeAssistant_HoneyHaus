@@ -59,10 +59,7 @@ history:
 logbook:
 
 # logger:
-#   default: warning
-#   logs:
-#     homeassistant.components.automation: info
-#     homeassistant.components.scripts: info
+#   default: debug
     
 # Track the sun
 sun:
@@ -75,15 +72,23 @@ ios:
 
 device_tracker:
   - platform: nmap_tracker
-    hosts: 192.168.1.1/24
     track_new_devices: false
+    hosts: 
+      - 192.168.1.234
+      - 192.168.1.112
 
 #Text to speech
 # tts:  
 #  - platform: google
-#media_player:
-#  - platform: roku
-#    host: 192.168.1.250
+
+# media_player:
+#   - platform: roku
+#     host: 192.168.1.250
+
+apple_tv:
+  - host: 192.168.1.120
+    login_id: !secret apple_tv_id
+    start_off: true
 
 vera:
   vera_controller_url: http://192.168.1.153:3480
