@@ -58,10 +58,10 @@
     conditions: 
       - condition: state
         entity_id: climate.thermostat_4
-        state: heat
+        state: Heat
       - condition: state
         entity_id: climate.thermostat_4
-        state: cool
+        state: Cool
   action:
   - alias: Intruder Alert - Front Door
     data:
