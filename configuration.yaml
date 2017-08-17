@@ -79,9 +79,8 @@ device_tracker:
 tts:  
  - platform: google
 
-# media_player:
-#   - platform: roku
-#     host: 192.168.1.250
+media_player:
+  - platform: cast
 
 apple_tv:
   - host: 192.168.1.120
