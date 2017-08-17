@@ -23,18 +23,18 @@ bathroom_group:
   name: Bathroom
   entities:
   - light.over_sink_light_53
+  - binary_sensor.eye_motion_71
   - sensor.eye_lux_73
   - sensor.eye_temperature_72
-  - binary_sensor.eye_motion_71
 basement_group:
   name: Basement/Stairs
   control: hidden
   entities:
-  - binary_sensor.stairway_motion_80
   - light.stairwell_light_78
+  - switch.washer_fan_38
+  - binary_sensor.stairway_motion_80
   - binary_sensor.flood_sensor_64
   - switch.washer_power_strip_36
-  - switch.washer_fan_38
   view: false
 guest_room_group:
   name: Guest Bedroom
