@@ -34,3 +34,9 @@ sensor.home_to_sprint:
 
 sensor.john_to_home: 
   hidden: true
+
+sensor.local_time:
+  hidden: true
+
+sensor.dark_sky_template:
+  hidden: true

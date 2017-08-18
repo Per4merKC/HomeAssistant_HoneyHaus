@@ -2,3 +2,7 @@
   symbols:
     - S
     - AAPL
+- platform: bitcoin
+  display_options:
+    - exchangerate
+    - trade_volume_btc
