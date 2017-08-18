@@ -93,45 +93,7 @@ vera:
   #exclude: [34, 80]
   lights: [53]
 
-sensor:
-  - platform: yr
-    name: Weather
-    monitored_conditions: 
-      - temperature
-      - symbol
-  - platform: systemmonitor
-    resources: 
-      - type: disk_use_percent
-        arg: /
-      - type: memory_use_percent
-      - type: processor_use
-  - platform: moon
-  - platform: yahoo_finance
-    symbols:
-      - S
-      - AAPL
-  - platform: speedtest
-    hour:
-      - 8
-      - 12
-      - 16
-      - 20
-    monitored_conditions:
-      - ping
-      - download
-      - upload
-  - platform: google_travel_time
-    name: Home to Sprint
-    api_key: !secret google_key
-    origin: zone.home
-    destination: zone.sprint
-    hidden: true
-  - platform: google_travel_time
-    name: John to Home
-    api_key: !secret google_key
-    origin: device_tracker.je_iphone
-    destination: zone.home
-    hidden: true
+sensor: !include_dir_merge_list sensors
 
 shopping_list:
 

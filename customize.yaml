@@ -28,3 +28,9 @@ binary_sensor.stairway_motion_80:
 binary_sensor.flood_sensor_64:
   friendly_name: Basement Flood
   device_class: moisture
+
+sensor.home_to_sprint:
+  hidden: true
+
+sensor.john_to_home: 
+  hidden: true

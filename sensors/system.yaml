@@ -1,0 +1,16 @@
+- platform: systemmonitor
+  resources: 
+    - type: disk_use_percent
+      arg: /
+    - type: memory_use_percent
+    - type: processor_use
+- platform: speedtest
+  hour:
+    - 8
+    - 12
+    - 16
+    - 20
+  monitored_conditions:
+    - ping
+    - download
+    - upload

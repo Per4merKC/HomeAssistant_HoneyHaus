@@ -1,0 +1,10 @@
+- platform: google_travel_time
+  name: Home to Sprint
+  api_key: !secret google_key
+  origin: zone.home
+  destination: zone.sprint
+- platform: google_travel_time
+  name: John to Home
+  api_key: !secret google_key
+  origin: device_tracker.je_iphone
+  destination: zone.home
