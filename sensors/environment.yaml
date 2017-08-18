@@ -5,7 +5,7 @@
     - symbol
 - platform: moon
 - platform: darksky
-  api_key: !secret dark_sky_key
+  api_key: !secret darksky_key
   monitored_conditions:
     - summary
     - icon

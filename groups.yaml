@@ -65,6 +65,15 @@ alarm_group:
   - switch.stairway_motion_80
   - switch.flood_sensor_64
   - switch.front_door_92
+weather:
+  name: Weather
+  entities:
+  - sun.sun
+  - sensor.moon
+  - sensor.dark_sky_icon
+  - sensor.dark_sky_summmary
+  - sensor.dark_sky_minutely_summary
+  - sensor.dark_sky_storm_distance
 pi_group:
   name: Raspberry Pi
   entities: 
