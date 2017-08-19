@@ -1,0 +1,7 @@
+- name: goodnight
+  entities: 
+    group.all_lights: off
+
+- name: goodmorning
+  entities: 
+    light.over_sink_light_53: on

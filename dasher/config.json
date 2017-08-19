@@ -1,0 +1,10 @@
+{"buttons":[
+    {
+        "name": "Bedside Button",
+        "address": "50:F5:DA:74:FA:5B",
+        "url": "http://127.0.0.1:8123/api/services/scene/turn_on",
+        "method": "POST",
+        "json": true,
+        "body": {"entity_id": "scene.goodnight"}
+    }
+]}

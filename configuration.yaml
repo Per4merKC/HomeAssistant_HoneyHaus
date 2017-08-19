@@ -93,8 +93,6 @@ vera:
   exclude: [34]
   lights: [53]
 
-sensor: !include_dir_merge_list sensors
-
 binary_sensor:
   - platform: workday
     country: US
@@ -102,12 +100,29 @@ binary_sensor:
 
 shopping_list:
 
+switch:
+  - platform: template
+    switches:
+      good_night:
+        value_template: "{{is_state('scene.goodnight', 'on') }}"
+        turn_on:
+          service: scene.turn_on
+          entity_id: scene.goodnight
+        turn_off:
+          service: scene.turn_off
+          entity_id: scene.goodnight
+
+# mqtt:
+#   broker: 172.17.0.1
+
 # hdmi_cec:
 #   devices:
 #     TV: 0.0.0.0
 #     Google: 1.0.0.0
 #     ATV: 0.0.1.0
 
+sensor: !include_dir_merge_list sensors
+scene: !include_dir_merge_list scenes
 group: !include groups.yaml
 automation: !include automations.yaml
 zone: !include zones.yaml
