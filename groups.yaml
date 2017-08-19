@@ -103,3 +103,9 @@ pi_group:
   - sensor.cpu_use
   - sensor.disk_use_
   - sensor.ram_use
+
+travel_time_group:
+  name: Travel Times
+  entities: 
+  - sensor.home_to_sprint
+  - sensor.john_to_home
