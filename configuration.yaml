@@ -90,7 +90,7 @@ apple_tv:
 
 vera:
   vera_controller_url: http://192.168.1.153:3480
-  #exclude: [34, 80]
+  exclude: [34]
   lights: [53]
 
 sensor: !include_dir_merge_list sensors

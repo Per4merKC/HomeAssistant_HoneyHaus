@@ -29,13 +29,13 @@ binary_sensor.flood_sensor_64:
   friendly_name: Basement Flood
   device_class: moisture
 
+sensor.dark_sky_icon:
+  hidden: true
+
 sensor.home_to_sprint:
   hidden: true
 
 sensor.john_to_home: 
-  hidden: true
-
-sensor.local_time:
   hidden: true
 
 sensor.dark_sky_template:
