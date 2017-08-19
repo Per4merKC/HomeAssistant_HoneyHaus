@@ -95,6 +95,11 @@ vera:
 
 sensor: !include_dir_merge_list sensors
 
+binary_sensor:
+  - platform: workday
+    country: US
+    province: KS
+
 shopping_list:
 
 # hdmi_cec:

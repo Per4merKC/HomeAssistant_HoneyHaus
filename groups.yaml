@@ -36,6 +36,7 @@ bathroom_group:
   - binary_sensor.eye_motion_71
   - sensor.eye_lux_73
   - sensor.eye_temperature_72
+  - device_tracker.withings_scale
 
 basement_group:
   name: Basement/Stairs

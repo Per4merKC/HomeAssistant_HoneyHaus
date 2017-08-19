@@ -40,3 +40,7 @@ sensor.john_to_home:
 
 sensor.dark_sky_template:
   hidden: true
+
+device_tracker.withings_scale:
+  friendly_name: Scale
+  device_class: connectivity
