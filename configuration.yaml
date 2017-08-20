@@ -44,6 +44,7 @@ updater:
 
 # Discover some devices automatically
 discovery:
+  ignore: google_cast
 
 hassio:
 
@@ -75,13 +76,13 @@ device_tracker:
     interval_seconds: 30
 
 # Text to speech
-tts:  
-  - platform: google
-    language: "en"
-    base_url: !secret duck_url
+# tts:  
+#   - platform: google
+#     language: "en"
+#     base_url: !secret duck_url
 
-media_player:
-  - platform: cast
+# media_player:
+#   - platform: cast
 
 apple_tv:
   - host: 192.168.1.120
@@ -100,17 +101,10 @@ binary_sensor:
 
 shopping_list:
 
-switch:
-  - platform: template
-    switches:
-      good_night:
-        value_template: "{{is_state('scene.goodnight', 'on') }}"
-        turn_on:
-          service: scene.turn_on
-          entity_id: scene.goodnight
-        turn_off:
-          service: scene.turn_off
-          entity_id: scene.goodnight
+# weblink: 
+#   entities: 
+#   - name: Trigger Button
+#     url: https://honeyhaus.duckdns.org/api/
 
 # mqtt:
 #   broker: 172.17.0.1

@@ -44,3 +44,9 @@ sensor.dark_sky_template:
 device_tracker.withings_scale:
   friendly_name: Scale
   device_class: connectivity
+
+scene.goodnight:
+  hidden: true
+
+scene.goodmorning:
+  hidden: true
