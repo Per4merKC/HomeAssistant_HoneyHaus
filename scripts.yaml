@@ -38,7 +38,7 @@ basement_stair_motion_timer:
       data:
         entity_id: script.basement_stair_motion_helper
 
-dash_buttion_01_pressed:
+dash_button_01_pressed:
   sequence:
     - service: scene.turn_on
       data_template:
