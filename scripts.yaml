@@ -43,8 +43,8 @@ dash_button_01_pressed:
     - service: scene.turn_on
       data_template:
         entity_id: > 
-          {% if (states.sensor.local_time.state > "19:00") and (states.sensor.local_time.state < "04:00") %}
-            scene.goodnight
-          {% else %}
+          {% if (states.sensor.local_time.state > "04:00") and (states.sensor.local_time.state < "19:00") %}
             scene.goodmorning
+          {% else %}
+            scene.goodnight
           {% endif %}
