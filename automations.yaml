@@ -56,14 +56,22 @@
   condition:
     condition: or
     conditions: 
-      - condition: state
-        entity_id: climate.thermostat_4
-        state: Heat
-      - condition: state
-        entity_id: climate.thermostat_4
-        state: Cool
+      - condition: and
+        conditions:
+        - condition: state
+          entity_id: climate.thermostat_4
+          state: Heat
+        - condition: template
+          value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
+      - condition: and
+        conditions:
+        - condition: state
+          entity_id: climate.thermostat_4
+          state: Cool
+        - condition: template
+          value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
   action:
-  - alias: Intruder Alert - Front Door
+  - alias: HVAC Front Door
     data:
       message: Front door open and HVAC is running
       title: Energy Alert
