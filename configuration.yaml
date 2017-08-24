@@ -60,7 +60,7 @@ logbook:
     entities:
        - sensor.local_time
        - sensor.weather_symbol
-    entities: 
+    domains: 
       - sun
 
 # logger:
