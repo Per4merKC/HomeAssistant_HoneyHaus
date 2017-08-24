@@ -1,7 +1,7 @@
 # Bathroom
 bathroom_motion_helper:
   sequence:
-    - delay: "00:05:00"
+    - delay: "00:{{ states.sensor.bathroom_delay.state }}:00"
     - service: light.turn_off
       data:
         entity_id: light.over_sink_light_53

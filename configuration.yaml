@@ -56,6 +56,12 @@ history:
 
 # View all events in a logbook
 logbook:
+  exclude: 
+    entities:
+       - sensor.local_time
+       - sensor.weather_symbol
+    entities: 
+      - sun
 
 # logger:
 #   default: debug
@@ -76,7 +82,7 @@ device_tracker:
       - 192.168.1.112
       - 192.168.1.234
       - 192.168.1.219
-    interval_seconds: 10
+    interval_seconds: 15
 
 # Text to speech
 # tts:  

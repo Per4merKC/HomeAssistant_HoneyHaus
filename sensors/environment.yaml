@@ -14,6 +14,15 @@
   name: Local Time
   time_zone: America/Chicago
 - platform: template
+  sensors: 
+    bathroom_delay:
+      value_template: > 
+          {% if (states.sensor.local_time.state > "05:00") and (states.sensor.local_time.state < "10:00") %}
+            15
+          {% else %}
+            5
+          {% endif %}
+- platform: template
   sensors:
     dark_sky_template:
       value_template: "{{ states('sensor.dark_sky_summary') }}"

@@ -50,3 +50,6 @@ scene.goodnight:
 
 scene.goodmorning:
   hidden: true
+
+sensor.bathroom_delay:
+  hidden: true
