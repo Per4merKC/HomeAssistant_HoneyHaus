@@ -84,15 +84,6 @@ device_tracker:
       - 192.168.1.219
     interval_seconds: 15
 
-# Text to speech
-# tts:  
-#   - platform: google
-#     language: "en"
-#     base_url: !secret duck_url
-
-# media_player:
-#   - platform: cast
-
 apple_tv:
   - host: 192.168.1.120
     login_id: !secret apple_tv_id
@@ -100,7 +91,7 @@ apple_tv:
 
 vera:
   vera_controller_url: http://192.168.1.153:3480
-  exclude: [34]
+  exclude: [34, 95, 96]
   lights: [53]
 
 binary_sensor:
@@ -109,20 +100,6 @@ binary_sensor:
     province: KS
 
 shopping_list:
-
-# weblink: 
-#   entities: 
-#   - name: Trigger Button
-#     url: https://honeyhaus.duckdns.org/api/
-
-# mqtt:
-#   broker: 172.17.0.1
-
-# hdmi_cec:
-#   devices:
-#     TV: 0.0.0.0
-#     Google: 1.0.0.0
-#     ATV: 0.0.1.0
 
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes

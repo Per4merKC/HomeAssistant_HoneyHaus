@@ -1,7 +1,3 @@
-- platform: yahoo_finance
-  symbols:
-    - S
-    - AAPL
 - platform: bitcoin
   display_options:
     - exchangerate

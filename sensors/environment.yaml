@@ -1,27 +1,20 @@
+# Weather
 - platform: yr
   name: Weather
   monitored_conditions: 
     - temperature
     - symbol
+
+# Moon Information
 - platform: moon
+
+# DarkSky Entries
 - platform: darksky
   api_key: !secret darksky_key
   monitored_conditions:
     - summary
     - icon
     - nearest_storm_distance
-- platform: worldclock
-  name: Local Time
-  time_zone: America/Chicago
-- platform: template
-  sensors: 
-    bathroom_delay:
-      value_template: > 
-          {% if (states.sensor.local_time.state > "05:00") and (states.sensor.local_time.state < "10:00") %}
-            15
-          {% else %}
-            5
-          {% endif %}
 - platform: template
   sensors:
     dark_sky_template:
@@ -52,3 +45,19 @@
         {% else %}
           mdi:help-circle
         {% endif %}
+
+# World Clock
+- platform: worldclock
+  name: Local Time
+  time_zone: America/Chicago
+
+# Bathroom Time Adjustment for Morning
+- platform: template
+  sensors: 
+    bathroom_delay:
+      value_template: > 
+          {% if (states.sensor.local_time.state > "05:00") and (states.sensor.local_time.state < "10:00") %}
+            15
+          {% else %}
+            5
+          {% endif %}

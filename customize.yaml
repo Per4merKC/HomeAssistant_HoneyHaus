@@ -8,6 +8,9 @@ sensor.s:
 sensor.aapl:
   friendly_name: Apple
 
+sensor.googl:
+  friendly_name: Google 
+
 sensor.je_iphone_7_battery_level:
   friendly_name: John's Batery Level
 
@@ -52,4 +55,10 @@ scene.goodmorning:
   hidden: true
 
 sensor.bathroom_delay:
+  hidden: true
+
+sensor.local_time:
+  hidden: true
+
+binary_sensor.workday_sensor:
   hidden: true

@@ -1,9 +1,12 @@
+# Raspberry Pi Information
 - platform: systemmonitor
   resources: 
     - type: disk_use_percent
       arg: /
     - type: memory_use_percent
     - type: processor_use
+
+# Network Speed Test
 - platform: speedtest
   hour:
     - 8
