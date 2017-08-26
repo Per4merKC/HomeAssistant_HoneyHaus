@@ -1,3 +1,5 @@
 - platform: yahoo_finance
   symbols:
     - S
+    - AAPL
+    - GOOGL

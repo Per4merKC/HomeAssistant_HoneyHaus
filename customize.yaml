@@ -62,3 +62,4 @@ sensor.local_time:
 
 binary_sensor.workday_sensor:
   hidden: true
+
