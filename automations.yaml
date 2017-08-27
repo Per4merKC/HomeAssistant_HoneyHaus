@@ -1,5 +1,6 @@
 - id: jwe001
   alias: Bathroom Motion Detected
+  hide_entity: true
   trigger:
   - entity_id: binary_sensor.eye_motion_71
     platform: state
@@ -8,10 +9,10 @@
   action:
   - alias: Turn on bathroom lights
     service: script.bathroom_motion_timer
-  hide_entity: true
 
 - id: jwe002
   alias: Stairwell Motion Detected
+  hide_entity: true
   trigger:
   - entity_id: binary_sensor.stairway_motion_80
     platform: state
@@ -20,10 +21,10 @@
   action:
   - alias: Turn on basement stairwell lights
     service: script.basement_stair_motion_timer
-  hide_entity: true
 
 - id: jwe003
   alias: Front Door - Not Home
+  hide_entity: true
   trigger:
   - entity_id: binary_sensor.front_door_92
     platform: state
@@ -42,10 +43,10 @@
       message: Front door opened when nobody is home
       title: Front Door
     service: notify.ios_je_iphone
-  hide_entity: true
 
 - id: jwe004
   alias: HVAC on and Door Open Long
+  hide_entity: true
   trigger:
     - entity_id: binary_sensor.front_door_92
       platform: state
@@ -74,7 +75,5 @@
   - alias: HVAC Front Door
     data:
       message: Front door open and HVAC is running
-      title: Energy Alert
+      title: HVAC Alert
     service: notify.ios_je_iphone
-  hide_entity: true
-
