@@ -16,3 +16,11 @@
   monitored_conditions:
     - download
     - upload
+
+# HA Version
+- platform: version
+
+# HA Certificate Expiry
+- platform: cert_expiry
+  host: honeyhaus.duckdns.org
+
