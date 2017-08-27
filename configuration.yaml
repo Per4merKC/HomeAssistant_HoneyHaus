@@ -1,28 +1,20 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
   name: HoneyHaus
-  # Location required to calculate the time the sun rises and sets
   latitude: 39.030158
   longitude: -94.673839
-  # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 294
-  # metric for Metric, imperial for Imperial
   unit_system: imperial
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Chicago
   customize: !include customize.yaml
 
 # Show links to resources in log and frontend
 introduction:
 
-# Enables the frontend
 frontend:
 
-# Enables configuration UI
 config:
 
 http:
-  # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
   ssl_certificate: !secret http_ssl_certificate
   ssl_key: !secret http_ssl_key
@@ -32,6 +24,7 @@ http:
     - 192.168.1.0/24
   ip_ban_enabled: true
   login_attempts_threshold: 5
+  base_url: honeyhaus.duckdns.org
 
 # Checks for available updates
 # Note: This component will send some information about your system to
