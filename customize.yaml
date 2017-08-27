@@ -4,12 +4,15 @@ switch.washer_fan_38:
 
 sensor.s:
   friendly_name: Sprint
+  icon: mdi:cellphone-iphone
 
 sensor.aapl:
   friendly_name: Apple
+  icon: mdi:apple
 
 sensor.googl:
   friendly_name: Google 
+  icon: mdi:google
 
 sensor.je_iphone_7_battery_level:
   friendly_name: John's Batery Level
