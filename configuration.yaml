@@ -46,6 +46,17 @@ conversation:
 
 # Enables support for tracking state changes over time
 history:
+  exclude: 
+    entities: 
+      - device_tracker.withings_scale
+      - remote.apple_tv
+      - sensor.moon
+      - sensor.ssl_certificate_expiry
+    domains: 
+      - group
+      - sun
+
+      
 
 # View all events in a logbook
 logbook:
