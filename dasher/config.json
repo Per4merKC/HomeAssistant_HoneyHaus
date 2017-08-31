@@ -1,0 +1,10 @@
+{
+    "buttons": [
+      {
+        "name": "Bedside Button",
+        "address": "50:F5:DA:74:FA:5B",
+        "url": "https://honeyhaus.duckdns.org:8123/api/services/script/dash_button_01_pressed",
+        "method": "POST"
+      }
+    ]
+  }
