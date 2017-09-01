@@ -4,8 +4,10 @@ basement_tab:
   icon: mdi:washing-machine
   view: true
   entities:
-    - group.basement_group
+    - group.basement_card
+    - group.stairway_card
     - binary_sensor.flood_sensor_64
+    - binary_sensor.stairway_motion_80
     - switch.appliance_module_37
     - switch.appliance_module_2_39
     - switch.appliance_module_3_40
@@ -18,9 +20,16 @@ living_room_card:
   view: false
   entities:
     - light.tree_light_22
+    - binary_sensor.front_door_92
+    - group.can_lights_group
+
+can_lights_group:
+  name: Living Room Up Lights
+  icon: mdi:lava-lamp
+  view: false
+  entities:
     - light.north_can_light_63
     - light.south_can_light_65
-    - binary_sensor.front_door_92
 
 dining_room_card:
   name: Dining Room
@@ -30,14 +39,14 @@ dining_room_card:
     - climate.thermostat_4
     - light.chandelier_10
 
-kitchen_group:
+kitchen_card:
   name: Kitchen
   control: hidden
   view: false
   entities:
     - light.kitchen_lights_26
 
-bathroom_group:
+bathroom_card:
   name: Bathroom
   control: hidden
   view: false
@@ -48,24 +57,29 @@ bathroom_group:
     - sensor.eye_temperature_72
     - device_tracker.withings_scale
 
-basement_group:
-  name: Basement/Stairs
+basement_card:
+  name: Basement
   control: hidden
   view: false
   entities:
-    - light.stairwell_light_78
     - switch.washer_fan_38
-    - binary_sensor.stairway_motion_80
     - switch.washer_power_strip_36
 
-guest_room_group:
+stairway_card:
+  name: Stairway
+  control: hidden
+  view: false
+  entities: 
+    - light.stairwell_light_78
+
+guest_room_card:
   name: Guest Bedroom
   control: hidden
   view: false
   entities:
     - light.guest_room_light_27
 
-finance_group:
+finance_card:
   name: Monitary Data
   entities:
     - sensor.s
@@ -74,20 +88,20 @@ finance_group:
     - sensor.exchange_rate_1_btc
     - sensor.trade_volume
 
-iphone_info_group:
+iphone_info_card:
   name: iPhone Stats
   entities:
     - sensor.je_iphone_7_battery_state
     - sensor.je_iphone_7_battery_level
 
-speed_test_group:
+speed_test_card:
   name: Speedtest
   entities:
     - sensor.speedtest_ping
     - sensor.speedtest_upload
     - sensor.speedtest_download
 
-alarm_group:
+alarm_card:
   name: Alarm Mode Devices
   entities:
     - switch.eye_motion_71
@@ -95,7 +109,7 @@ alarm_group:
     - switch.flood_sensor_64
     - switch.front_door_92
 
-weather_group:
+weather_card:
   name: Weather
   entities:
     - sun.sun
@@ -106,7 +120,7 @@ weather_group:
     - sensor.dark_sky_nearest_storm_distance
     - sensor.dark_sky_template
 
-pi_group:
+pi_card:
   name: Raspberry Pi
   entities: 
     - sensor.cpu_speed
@@ -116,7 +130,7 @@ pi_group:
     - sensor.current_version
     - sensor.ssl_certificate_expiry
 
-travel_time_group:
+travel_time_card:
   name: Travel Times
   entities: 
     - sensor.home_to_sprint
