@@ -5,6 +5,11 @@ basement_tab:
   view: true
   entities:
     - group.basement_group
+    - binary_sensor.flood_sensor_64
+    - switch.appliance_module_37
+    - switch.appliance_module_2_39
+    - switch.appliance_module_3_40
+    - switch.appliance_module_4_59
 
 # GROUPS (cards)
 living_room_card:
@@ -51,7 +56,6 @@ basement_group:
     - light.stairwell_light_78
     - switch.washer_fan_38
     - binary_sensor.stairway_motion_80
-    - binary_sensor.flood_sensor_64
     - switch.washer_power_strip_36
 
 guest_room_group:

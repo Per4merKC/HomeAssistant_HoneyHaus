@@ -7,9 +7,6 @@ homeassistant:
   time_zone: America/Chicago
   customize: !include customize.yaml
 
-# Show links to resources in log and frontend
-introduction:
-
 frontend:
 
 config:
@@ -26,20 +23,16 @@ http:
   login_attempts_threshold: 5
   base_url: honeyhaus.duckdns.org
 
-# Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
+  include_used_components: true
 
 # Discover some devices automatically
 discovery:
   ignore: google_cast
 
 hassio:
+
+shopping_list:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -55,8 +48,6 @@ history:
     domains: 
       - group
       - sun
-
-      
 
 # View all events in a logbook
 logbook:
@@ -102,8 +93,6 @@ binary_sensor:
   - platform: workday
     country: US
     province: KS
-
-shopping_list:
 
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
