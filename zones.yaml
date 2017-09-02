@@ -30,15 +30,15 @@
 
 - name: IKEA
   latitude: 39.019142
-  longitude: 94.691179
+  longitude: -94.691179
   icon: mdi:screwdriver
 
 - name: Hy-Vee
   latitude: 39.019127
-  longitude: 94.662724
+  longitude: -94.662724
   icon: mdi:cart
 
 - name: Aldi on Row
   latitude: 39.040526
-  longitude: 94.639087
+  longitude: -94.639087
   icon: mdi:cart
