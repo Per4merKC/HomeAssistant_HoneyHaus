@@ -8,6 +8,7 @@
   longitude: -94.65785979999998
   icon: mdi:cellphone-iphone
 
+# Fitness
 - name: W.E. Fit
   latitude: 38.9636027
   longitude: -94.66575669999997
@@ -17,7 +18,8 @@
   latitude: 38.9822845
   longitude: -94.66922260000001
   icon: mdi:dumbbell
-  
+
+# Family  
 - name: Farm
   latitude: 38.539777
   longitude: -94.753074
@@ -28,6 +30,7 @@
   longitude: -94.686395
   icon: mdi:home-variant
 
+# Shopping
 - name: IKEA
   latitude: 39.019142
   longitude: -94.691179
@@ -68,6 +71,28 @@
   longitude: -94.670408
   icon: mdi:desktop-classic
 
+- name: Nebraska Furniture Mart
+  latitude: 39.124593
+  longitude: -94.819022
+  icon: mdi:sofa
+
+- name: Nike Plaza
+  latitude: 39.041254
+  longitude: -94.589668
+  icon: mdi:cart
+
+- name: Nike Outlet
+  latitude: 39.125903
+  longitude: -94.825692
+  icon: mdi:cart
+
+# Errands
+- name: Barbers of Westport
+  latitude: 39.052795
+  longitude: -94.593137
+  icon: mdi:content-cut
+
+# Theatre
 - name: Just Off Broadway Theatre
   latitude: 39.071983
   longitude: -94.588161
@@ -88,18 +113,55 @@
   longitude: -94.570579
   icon: mdi:ticket-account
 
-- name: Nebraska Furniture Mart
-  latitude: 39.124593
-  longitude: -94.819022
-  icon: mdi:sofa
+- name: Shawnee Mission Theatre in the Park
+  latitude: 38.991159
+  longitude: -94.781075
+  icon: mdi:ticket-account
 
-- name: Nike Plaza
-  latitude: 39.041254
-  longitude: -94.589668
-  icon: mdi:cart
+- name: Folly Theatre
+  latitude: 39.100224
+  longitude: -94.587211
+  icon: mdi:ticket-account
 
-- name: Nike Outlet
-  latitude: 39.125903
-  longitude: -94.825692
-  icon: mdi:cart
+# Dining
+- name: Joe's KC BBQ
+  latitude: 39.044448
+  longitude: -94.620740
+  icon: mdi:pig
 
+- name: Joe's KC BBQ
+  latitude: 38.915280
+  longitude: -94.639419
+  icon: mdi:pig
+
+# Museum
+- name: National World War 1 Memorial
+  latitude: 39.081112
+  longitude: -94.585602
+  icon: mdi:pillar
+
+- name: Nelson-Atkins Museum of Art
+  latitude: 39.044967
+  longitude: -94.580926
+  icon: mdi:pillar
+
+- name: Jazz Museum
+  latitude: 39.091575
+  longitude: -94.562672
+  icon: mdi:saxophone
+
+# Clubs
+- name: Hamburger Mary's
+  latitude: 39.060974
+  longitude: -94.590589
+  icon: mdi:martini
+
+- name: Woody's
+  latitude: 39.059596
+  longitude: -94.590849
+  icon: mdi:beer
+
+- name: Missy B's
+  latitude: 39.056802
+  longitude: -94.595953
+  icon: mdi:martini
