@@ -42,3 +42,64 @@
   latitude: 39.040526
   longitude: -94.639087
   icon: mdi:cart
+
+- name: Costco
+  latitude: 39.067649
+  longitude: -94.580369
+  icon: mdi:cart
+
+- name: Trader Joe's
+  latitude: 38.971459
+  longitude: -94.606261
+  icon: mdi:cart
+
+- name: Apple Store Leawood
+  latitude: 38.911462
+  longitude: -94.637687
+  icon: mdi:apple
+
+- name: Apple Store Plaza
+  latitude: 39.041200
+  longitude: -94.590064
+  icon: mdi:apple
+
+- name: Micro Center
+  latitude: 38.960651
+  longitude: -94.670408
+  icon: mdi:desktop-classic
+
+- name: Just Off Broadway Theatre
+  latitude: 39.071983
+  longitude: -94.588161
+  icon: mdi:ticket-account
+
+- name: Johnson County Arts and Herritage Center
+  latitude: 38.969308
+  longitude: -94.668403
+  icon: mdi:ticket-account
+
+- name: Barn Players
+  latitude: 39.019416
+  longitude: -94.657185
+  icon: mdi:ticket-account
+  
+- name: Arts Asylum
+  latitude: 39.103340
+  longitude: -94.570579
+  icon: mdi:ticket-account
+
+- name: Nebraska Furniture Mart
+  latitude: 39.124593
+  longitude: -94.819022
+  icon: mdi:sofa
+
+- name: Nike Plaza
+  latitude: 39.041254
+  longitude: -94.589668
+  icon: mdi:cart
+
+- name: Nike Outlet
+  latitude: 39.125903
+  longitude: -94.825692
+  icon: mdi:cart
+
