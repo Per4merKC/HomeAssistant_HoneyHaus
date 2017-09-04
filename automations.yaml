@@ -1,14 +1,14 @@
-- id: jwe001
-  alias: Bathroom Motion Detected
-  hide_entity: true
-  trigger:
-  - entity_id: binary_sensor.eye_motion_71
-    platform: state
-    from: 'off'
-    to: 'on'
-  action:
-  - alias: Turn on bathroom lights
-    service: script.bathroom_motion_timer
+# - id: jwe001
+#   alias: Bathroom Motion Detected
+#   hide_entity: true
+#   trigger:
+#   - entity_id: binary_sensor.eye_motion_71
+#     platform: state
+#     from: 'off'
+#     to: 'on'
+#   action:
+#   - alias: Turn on bathroom lights
+#     service: script.bathroom_motion_timer
 
 - id: jwe002
   alias: Stairwell Motion Detected

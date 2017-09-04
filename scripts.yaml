@@ -1,21 +1,21 @@
 # Bathroom
-bathroom_motion_helper:
-  sequence:
-    - delay: "00:{{ states.sensor.bathroom_delay.state }}:00"
-    - service: light.turn_off
-      data:
-        entity_id: light.over_sink_light_53
+# bathroom_motion_helper:
+#   sequence:
+#     - delay: "00:{{ states.sensor.bathroom_delay.state }}:00"
+#     - service: light.turn_off
+#       data:
+#         entity_id: light.over_sink_light_53
 
-bathroom_motion_timer:
-  sequence:
-    - service: script.turn_off
-      data:
-        entity_id: script.bathroom_motion_helper
-    - service: light.turn_on
-      entity_id: light.over_sink_light_53
-    - service: script.turn_on
-      data:
-        entity_id: script.bathroom_motion_helper
+# bathroom_motion_timer:
+#   sequence:
+#     - service: script.turn_off
+#       data:
+#         entity_id: script.bathroom_motion_helper
+#     - service: light.turn_on
+#       entity_id: light.over_sink_light_53
+#     - service: script.turn_on
+#       data:
+#         entity_id: script.bathroom_motion_helper
 
 # Basement Stairs
 basement_stair_motion_helper:
