@@ -13,6 +13,20 @@ basement_tab:
     - switch.appliance_module_3_40
     - switch.appliance_module_4_59
 
+information_tab:
+  name: Information
+  icon: mdi:information
+  view: true
+  entities:
+    - group.weather_card
+    - group.iphone_info_card
+    - group.pi_card
+    - group.finance_card
+    - group.speed_test_card
+    - group.travel_time_card
+    - device_tracker.je_iphone
+    - device_tracker.rb_iphone
+
 # GROUPS (cards)
 living_room_card:
   name: Living Room
