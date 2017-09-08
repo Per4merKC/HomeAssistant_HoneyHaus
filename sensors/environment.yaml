@@ -4,6 +4,14 @@
   monitored_conditions: 
     - temperature
     - symbol
+    
+# Have I Been Pwned
+- platform: haveibeenpwned
+  email: 
+    - !secret pwned_email_1
+    - !secret pwned_email_2
+    - !secret pwned_email_3
+    - !secret pwned_email_4
 
 # Moon Information
 - platform: moon
