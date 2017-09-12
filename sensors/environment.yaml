@@ -12,8 +12,17 @@
     - !secret pwned_email_2
     - !secret pwned_email_3
 
+# Air Visual
+- platform: airvisual
+  api_key: !secret airvisual_key
+  monitored_conditions: us
+
 # Moon Information
 - platform: moon
+
+# Season
+- platform: season
+  type: astronomical
 
 # DarkSky Entries
 - platform: darksky

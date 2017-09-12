@@ -19,6 +19,12 @@
   longitude: -94.66922260000001
   icon: mdi:dumbbell
 
+# Friends
+- name: Duane and Patrick
+  latitude: 38.927817
+  longitude: -94.573759
+  icon: mdi:account-multiple
+
 # Family  
 - name: Farm
   latitude: 38.539777
