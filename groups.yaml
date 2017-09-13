@@ -26,7 +26,7 @@ information_tab:
     - group.travel_time_card
     - device_tracker.je_iphone
     - device_tracker.rb_iphone
-    
+
 weather_tab: 
   name: Weather
   icon: mdi:weather-partlycloudy
@@ -171,4 +171,4 @@ email_breach_card:
   entities: 
     - sensor.breaches_per4merkcgmailcom
     - sensor.breaches_per4merkcrrcom
-    - senson.sensor.breaches_per4merlthotmailcom
+    - sensor.breaches_per4merlthotmailcom
