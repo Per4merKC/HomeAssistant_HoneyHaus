@@ -13,6 +13,7 @@ deps
 tts
 secrets.yaml
 known_devices.yaml
+google_calendars.yaml
 *.conf
 plex.conf
 phue.conf
