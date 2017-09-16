@@ -94,6 +94,14 @@ vera:
   exclude: [34, 53, 71, 72, 73, 95, 96]
 #  lights: [53]
 
+usps:
+    username: !secret usps_user
+    password: !secret usps_password
+
+camera:
+  - platform: usps
+    scan_interval: 5
+
 binary_sensor:
   - platform: workday
     country: US

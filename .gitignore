@@ -14,6 +14,7 @@ tts
 secrets.yaml
 known_devices.yaml
 google_calendars.yaml
+usps_cookies.pickle
 *.conf
 plex.conf
 phue.conf
