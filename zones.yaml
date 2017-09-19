@@ -108,6 +108,7 @@
   latitude: 38.969308
   longitude: -94.668403
   icon: mdi:ticket-account
+  radius: 250
 
 - name: Barn Players
   latitude: 39.019416
@@ -123,10 +124,28 @@
   latitude: 38.991159
   longitude: -94.781075
   icon: mdi:ticket-account
+  radius: 250
 
 - name: Folly Theatre
   latitude: 39.100224
   longitude: -94.587211
+  icon: mdi:ticket-account
+
+- name: St. Pius X Rehearsal Space
+  latitude: 39.029225
+  longitude: -94.654217
+  icon: mdi:ticket-account
+  radius: 250
+
+- name: The White Theatre
+  latitude: 38.918843
+  longitude: -94.653471
+  icon: mdi:ticket-account
+  radius: 250
+
+- name: OCTA
+  latitude: 38.880763
+  longitude: -94.811113
   icon: mdi:ticket-account
 
 # Dining
@@ -170,4 +189,14 @@
 - name: Missy B's
   latitude: 39.056802
   longitude: -94.595953
+  icon: mdi:martini
+
+- name: Side Kicks Saloon
+  latitude: 39.059930
+  longitude: -94.585626
+  icon: mdi:martini
+
+- name: Bistro 303
+  latitude: 39.053695
+  longitude: -94.589385
   icon: mdi:martini
