@@ -7,6 +7,7 @@
   latitude: 38.9169821
   longitude: -94.65785979999998
   icon: mdi:cellphone-iphone
+  radius: 250
 
 # Fitness
 - name: W.E. Fit
@@ -135,13 +136,13 @@
   latitude: 39.029225
   longitude: -94.654217
   icon: mdi:ticket-account
-  radius: 250
+  radius: 100
 
 - name: The White Theatre
   latitude: 38.918843
   longitude: -94.653471
   icon: mdi:ticket-account
-  radius: 250
+  radius: 100
 
 - name: OCTA
   latitude: 38.880763
@@ -200,3 +201,4 @@
   latitude: 39.053695
   longitude: -94.589385
   icon: mdi:martini
+
