@@ -109,7 +109,7 @@
   latitude: 38.969308
   longitude: -94.668403
   icon: mdi:ticket-account
-  radius: 250
+  radius: 100
 
 - name: Barn Players
   latitude: 39.019416
@@ -176,16 +176,23 @@
   longitude: -94.562672
   icon: mdi:saxophone
 
+- name: Union Station
+  latitude: 39.085243
+  longitude: -94.585539
+  icon: mdi:train
+
 # Clubs
 - name: Hamburger Mary's
   latitude: 39.060974
   longitude: -94.590589
   icon: mdi:martini
+  radius: 50
 
 - name: Woody's
   latitude: 39.059596
   longitude: -94.590849
   icon: mdi:beer
+  radius: 50
 
 - name: Missy B's
   latitude: 39.056802
