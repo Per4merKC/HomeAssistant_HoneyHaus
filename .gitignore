@@ -15,6 +15,7 @@ secrets.yaml
 known_devices.yaml
 google_calendars.yaml
 usps_cookies.pickle
+usps_cache.sqlite
 *.conf
 plex.conf
 phue.conf
