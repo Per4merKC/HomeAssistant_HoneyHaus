@@ -24,7 +24,9 @@ basement_stair_motion_helper:
         minutes: 3
     - service: light.turn_off
       data:
-        entity_id: light.stairwell_light_78
+        entity_id: 
+          - light.stairwell_light_78
+          - light.washing_light_97
 
 basement_stair_motion_timer:
   sequence:
@@ -32,7 +34,9 @@ basement_stair_motion_timer:
       data:
         entity_id: script.basement_stair_motion_helper
     - service: light.turn_on
-      entity_id: light.stairwell_light_78
+      entity_id: 
+        - light.stairwell_light_78
+        - light.washing_light_97
     - service: script.turn_on
       data:
         entity_id: script.basement_stair_motion_helper

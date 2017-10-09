@@ -87,6 +87,7 @@ basement_card:
   entities:
     - switch.washer_fan_38
     - switch.washer_power_strip_36
+    - light.washing_light_97
 
 stairway_card:
   name: Stairway
