@@ -19,6 +19,7 @@
 
 # HA Version
 - platform: version
+- platform: uptime
 
 # HA Certificate Expiry
 - platform: cert_expiry

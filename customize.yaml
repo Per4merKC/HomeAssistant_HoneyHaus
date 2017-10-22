@@ -24,7 +24,7 @@ sensor.yr_symbol:
   friendly_name: Weather
 
 binary_sensor.eye_motion_71:
-  friendly_name: Bathroom Motion
+  friendly_name: Basement Motion
   device_class: motion
 
 binary_sensor.stairway_motion_80:
