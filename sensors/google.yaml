@@ -10,6 +10,11 @@
   origin: device_tracker.je_iphone
   destination: zone.home
 
+- platform: google_wifi
+  name: Google Wifi Mesh
+  host: 192.168.1.234
+  
+
 # Google Calendar
 # Future
 

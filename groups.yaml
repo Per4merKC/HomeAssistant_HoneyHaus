@@ -20,10 +20,13 @@ information_tab:
   entities:
     - group.iphone_info_card
     - group.pi_card
+    - group.energy_card
     - group.finance_card
+    - group.google_wifi_card
+    - group.crypto_curr_card
+    - group.travel_time_card
     - group.speed_test_card
     - group.email_breach_card
-    - group.travel_time_card
     - device_tracker.je_iphone
     - device_tracker.rb_iphone
 
@@ -106,17 +109,33 @@ guest_room_card:
 finance_card:
   name: Monitary Data
   entities:
-    - sensor.s
-    - sensor.aapl
-    - sensor.googl
+    - sensor.sprint
+    - sensor.apple
+    - sensor.google
+    - sensor.vanguard_mega_cap_etf
+    - sensor.schwab_us_dividends_equity_etf
+    - sensor.spdr_sp_retail_etf
+    - sensor.workplace_equality_portfolio
+
+crypto_curr_card:
+  name: Crypto Currency
+  entities:     
+    - sensor.bitcon
     - sensor.exchange_rate_1_btc
     - sensor.trade_volume
+
+energy_card:
+  name: Home Energy
+  entities:
+    - sensor.home_energy_monitor_98
+    - sensor.home_energy_monitor_1_99
+    - sensor.home_energy_monitor_2_100
 
 iphone_info_card:
   name: iPhone Stats
   entities:
-    - sensor.je_iphone_7_battery_state
-    - sensor.je_iphone_7_battery_level
+    - sensor.iphone_battery_state
+    - sensor.iphone_battery_level
 
 speed_test_card:
   name: Speedtest
@@ -155,11 +174,21 @@ pi_card:
   name: Raspberry Pi
   entities: 
     - sensor.cpu_speed
-    - sensor.cpu_use
-    - sensor.disk_use_
-    - sensor.ram_use
+    - sensor.cpu_used
+    - sensor.disk_used_
+    - sensor.ram_used
     - sensor.current_version
     - sensor.ssl_certificate_expiry
+
+google_wifi_card:
+  name: Google Wifi Status
+  entities: 
+    - sensor.google_wifi_mesh_current_version
+    - sensor.google_wifi_mesh_last_restart
+    - sensor.google_wifi_mesh_local_ip
+    - sensor.google_wifi_mesh_new_version
+    - sensor.google_wifi_mesh_status
+    - sensor.google_wifi_mesh_uptime
 
 travel_time_card:
   name: Travel Times

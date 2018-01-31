@@ -1,6 +1,17 @@
 - platform: alpha_vantage
   api_key: !secret alpha_vantage_key
   symbols:
-    - S
-    - AAPL
-    - GOOGL
+    - name: Sprint
+      symbol: S
+    - name: Apple
+      symbol: AAPL
+    - name: Google
+      symbol: GOOGL
+    - name: Vanguard Mega Cap ETF
+      symbol: MGC
+    - name: Workplace Equality Portfolio
+      symbol: EQLT
+    - name: SPDR S&P Retail (ETF)
+      symbol: XRT
+    - name: Schwab US Dividends Equity ETF
+      symbol: SCHD

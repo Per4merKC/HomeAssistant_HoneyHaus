@@ -2,17 +2,29 @@
 switch.washer_fan_38:
   icon: mdi:fan
 
-sensor.s:
-  friendly_name: Sprint
+sensor.sprint:
   icon: mdi:cellphone-iphone
 
-sensor.aapl:
-  friendly_name: Apple
+sensor.apple:
   icon: mdi:apple
 
-sensor.googl:
-  friendly_name: Google 
+sensor.google:
   icon: mdi:google
+
+sensor.schwab_us_dividends_equity_etf:
+  icon: mdi:finance
+
+sensor.vanguard_mega_cap_etf:
+  icon: mdi:finance
+
+sensor.workplace_equality_portfolio: 
+  icon: mdi:finance
+
+sensor.spdr_sp_retail_etf:
+  icon: mdi:finance
+
+sensor.bitcon:
+  icon: mdi:bitcoin
 
 sensor.je_iphone_7_battery_level:
   friendly_name: John's Batery Level
@@ -66,3 +78,14 @@ sensor.local_time:
 binary_sensor.workday_sensor:
   hidden: true
 
+sensor.home_energy_monitor_98:
+  friendly_name: Energy Total
+  icon: mdi:flash-circle
+
+sensor.home_energy_monitor_1_99:
+  friendly_name: Electric Leg I
+  icon: mdi:flash
+
+sensor.home_energy_monitor_2_100:
+  friendly_name: Electric Leg II
+  icon: mdi:flash
