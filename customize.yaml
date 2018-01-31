@@ -89,3 +89,21 @@ sensor.home_energy_monitor_1_99:
 sensor.home_energy_monitor_2_100:
   friendly_name: Electric Leg II
   icon: mdi:flash
+
+sensor.google_wifi_mesh_current_version:
+  friendly_name: Wifi Current Version
+
+sensor.google_wifi_mesh_last_restart:
+  friendly_name: Wifi Mesh Last Start
+
+sensor.google_wifi_mesh_local_ip:
+  friendly_name: Wifi Local IP
+
+sensor.google_wifi_mesh_new_version:
+  friendly_name: Wifi New Version
+
+sensor.google_wifi_mesh_status:
+  friendly_name: Wifi Mesh Status
+
+sensor.google_wifi_mesh_uptime:
+  friendly_name: Wifi Mesh Uptime
