@@ -90,9 +90,8 @@ apple_tv:
     start_off: true
 
 vera:
-  vera_controller_url: http://192.168.1.153:3480
-  exclude: [34, 53, 71, 72, 73, 95, 96]
-#  lights: [53]
+  vera_controller_url: http://192.168.1.224:3480
+  exclude: [34, 53, 71, 72, 73, 79, 95, 96]
 
 #usps:
 #    username: !secret usps_user
