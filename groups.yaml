@@ -26,9 +26,9 @@ information_tab:
     - group.crypto_curr_card
     - group.travel_time_card
     - group.speed_test_card
-    - group.email_breach_card
     - device_tracker.je_iphone
     - device_tracker.rb_iphone
+#    - group.email_breach_card
 
 weather_tab: 
   name: Weather
@@ -196,9 +196,9 @@ travel_time_card:
     - sensor.home_to_sprint
     - sensor.john_to_home
 
-email_breach_card:
-  name: Pwned
-  entities: 
-    - sensor.breaches_per4merkcgmailcom
-    - sensor.breaches_per4merkcrrcom
-    - sensor.breaches_per4merlthotmailcom
+# email_breach_card:
+#   name: Pwned
+#   entities: 
+#     - !secret sensor_email_1
+#     - !secret sensor_email_2
+#     - !secret sensor_email_3
