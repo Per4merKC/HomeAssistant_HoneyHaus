@@ -1,0 +1,12 @@
+media_player.apple_tv:
+  platform: apple_tv
+  unique_id: eb445e3511e624f236d1d9f9d4276c2dfa9c35aff760b6b51a45ebe18b155838
+remote.apple_tv:
+  platform: apple_tv
+  unique_id: eb445e3511e624f236d1d9f9d4276c2dfa9c35aff760b6b51a45ebe18b155838
+sensor.iphone_battery_level:
+  platform: ios
+  unique_id: level_je_iphone
+sensor.iphone_battery_state:
+  platform: ios
+  unique_id: state_je_iphone
