@@ -16,6 +16,7 @@
 - platform: spotcrime
   name: Crimes
   radius: 200
+  days: 2
 
 # Air Visual
 - platform: airvisual
