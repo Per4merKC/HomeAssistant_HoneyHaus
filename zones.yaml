@@ -132,12 +132,6 @@
   longitude: -94.587211
   icon: mdi:ticket-account
 
-- name: St. Pius X Rehearsal Space
-  latitude: 39.029225
-  longitude: -94.654217
-  icon: mdi:ticket-account
-  radius: 100
-
 - name: The White Theatre
   latitude: 38.918843
   longitude: -94.653471

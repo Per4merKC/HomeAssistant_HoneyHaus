@@ -72,6 +72,9 @@ logbook:
 # Track the sun
 sun:
 
+homekit: 
+  pincode: '353-23-532'
+
 ios:
   notify:
   - platform: ios 

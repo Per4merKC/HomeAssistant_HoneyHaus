@@ -10,3 +10,12 @@ sensor.iphone_battery_level:
 sensor.iphone_battery_state:
   platform: ios
   unique_id: state_je_iphone
+sensor.us_air_quality_index:
+  platform: airvisual
+  unique_id: 39.030158,-94.673839_aqi
+sensor.us_air_pollution_level:
+  platform: airvisual
+  unique_id: 39.030158,-94.673839_pollution_level
+sensor.us_main_pollutant:
+  platform: airvisual
+  unique_id: 39.030158,-94.673839_main_pollutant

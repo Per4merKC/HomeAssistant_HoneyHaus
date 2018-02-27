@@ -12,6 +12,11 @@
     - !secret pwned_email_2
     - !secret pwned_email_3
 
+# Spot Crime
+- platform: spotcrime
+  name: Crimes
+  radius: 200
+
 # Air Visual
 - platform: airvisual
   api_key: !secret airvisual_key
