@@ -12,6 +12,8 @@ frontend:
 
 map: 
 
+cloud:
+
 config:
 
 http:
@@ -73,7 +75,7 @@ logbook:
 sun:
 
 # homekit: 
-#   pincode: '353-23-532'
+#    pincode: '353-23-532'
 
 ios:
   notify:
