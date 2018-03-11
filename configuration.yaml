@@ -101,11 +101,11 @@ vera:
   vera_controller_url: http://192.168.1.224:3480
   exclude: [34, 53, 71, 72, 73, 79, 95, 96]
 
-#usps:
+# usps:
 #    username: !secret usps_user
 #    password: !secret usps_password
 
-#camera:
+# camera:
 #  - platform: usps
 #    scan_interval: 5
 

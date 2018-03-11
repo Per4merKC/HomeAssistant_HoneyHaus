@@ -1,21 +1,76 @@
 media_player.apple_tv:
+  name:
   platform: apple_tv
   unique_id: eb445e3511e624f236d1d9f9d4276c2dfa9c35aff760b6b51a45ebe18b155838
 remote.apple_tv:
+  name:
   platform: apple_tv
   unique_id: eb445e3511e624f236d1d9f9d4276c2dfa9c35aff760b6b51a45ebe18b155838
 sensor.iphone_battery_level:
+  name:
   platform: ios
   unique_id: level_je_iphone
 sensor.iphone_battery_state:
+  name:
   platform: ios
   unique_id: state_je_iphone
 sensor.us_air_quality_index:
+  name:
   platform: airvisual
   unique_id: 39.030158,-94.673839_aqi
 sensor.us_air_pollution_level:
+  name:
   platform: airvisual
   unique_id: 39.030158,-94.673839_pollution_level
 sensor.us_main_pollutant:
+  name:
   platform: airvisual
   unique_id: 39.030158,-94.673839_main_pollutant
+sensor.allergy_index_tomorrow:
+  name:
+  platform: pollen
+  unique_id: 00544_allergy_index_tomorrow
+sensor.allergy_index_yesterday:
+  name:
+  platform: pollen
+  unique_id: 00544_allergy_index_yesterday
+sensor.allergy_index_today:
+  name:
+  platform: pollen
+  unique_id: 00544_allergy_index_today
+sensor.allergy_index_forecasted_average:
+  name:
+  platform: pollen
+  unique_id: 00544_allergy_index_forecasted_average
+sensor.allergy_index_historical_average:
+  name:
+  platform: pollen
+  unique_id: 00544_allergy_index_historical_average
+sensor.cold__flu_forecasted_average:
+  name:
+  platform: pollen
+  unique_id: 00544_cold__flu_forecasted_average
+sensor.cold__flu_forecasted_average_2:
+  name:
+  platform: pollen
+  unique_id: 66202_cold__flu_forecasted_average
+sensor.allergy_index_tomorrow_2:
+  name:
+  platform: pollen
+  unique_id: 66202_allergy_index_tomorrow
+sensor.allergy_index_today_2:
+  name:
+  platform: pollen
+  unique_id: 66202_allergy_index_today
+sensor.allergy_index_historical_average_2:
+  name:
+  platform: pollen
+  unique_id: 66202_allergy_index_historical_average
+sensor.allergy_index_yesterday_2:
+  name:
+  platform: pollen
+  unique_id: 66202_allergy_index_yesterday
+sensor.allergy_index_forecasted_average_2:
+  name:
+  platform: pollen
+  unique_id: 66202_allergy_index_forecasted_average

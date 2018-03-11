@@ -37,6 +37,7 @@ weather_tab:
   entities: 
     - group.weather_card
     - group.airvisual_card
+    - group.pollen_card
     - sensor.season
 
 # GROUPS (cards)
@@ -162,6 +163,17 @@ weather_card:
     - sensor.dark_sky_summary
     - sensor.dark_sky_nearest_storm_distance
     - sensor.dark_sky_template
+
+pollen_card: 
+  name: Pollen
+  icon: mdi:flower
+  entities:
+    - sensor.allergy_index_forecasted_average_2
+    - sensor.allergy_index_historical_average_2
+    - sensor.allergy_index_yesterday_2
+    - sensor.allergy_index_today_2
+    - sensor.allergy_index_tomorrow_2
+    - sensor.cold__flu_forecasted_average_2
 
 airvisual_card:
   name: AirVisual

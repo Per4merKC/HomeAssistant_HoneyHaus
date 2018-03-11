@@ -15,8 +15,8 @@
 # Spot Crime
 - platform: spotcrime
   name: Crimes
-  radius: 500
-  days: 2
+  radius: 1
+  days: 14
 
 # Air Visual
 - platform: airvisual
@@ -72,6 +72,18 @@
 - platform: worldclock
   name: Local Time
   time_zone: America/Chicago
+
+# pollen.com
+- platform: pollen
+  zip_code: "66202"
+  monitored_conditions:
+    - allergy_average_forecasted
+    - allergy_average_historical
+    - allergy_index_today
+    - allergy_index_tomorrow
+    - allergy_index_yesterday
+    - disease_average_forecasted
+
 
 # Bathroom Time Adjustment for Morning
 # - platform: template
