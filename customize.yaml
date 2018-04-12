@@ -47,6 +47,12 @@ binary_sensor.flood_sensor_64:
   friendly_name: Basement Flood
   device_class: moisture
 
+binary_sensor.back_door_105:
+  device_class: door 
+
+binary_sensor.front_door_92:
+  device_class: door 
+
 sensor.home_to_sprint:
   hidden: false
 

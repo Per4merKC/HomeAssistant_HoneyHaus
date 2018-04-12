@@ -26,6 +26,7 @@ information_tab:
     - group.crypto_curr_card
     - group.travel_time_card
     - group.speed_test_card
+    - group.crimes_card
     - device_tracker.je_iphone
     - device_tracker.rb_iphone
 #    - group.email_breach_card
@@ -65,6 +66,14 @@ dining_room_card:
   entities:
     - climate.thermostat_4
     - light.chandelier_10
+
+sun_room_card:
+  name: Sun Room
+  control: hidden
+  view: false
+  icon: mdi:sun
+  entities:
+    - binary_sensor.back_door_105
 
 kitchen_card:
   name: Kitchen
@@ -152,6 +161,7 @@ alarm_card:
     - switch.stairway_motion_80
     - switch.flood_sensor_64
     - switch.front_door_92
+    - switch.back_door_105
 
 weather_card:
   name: Weather
@@ -214,6 +224,11 @@ travel_time_card:
   entities: 
     - sensor.home_to_sprint
     - sensor.john_to_home
+
+crimes_card:
+  name: Crimes
+  entities: 
+    - sensor.crimes
 
 # email_breach_card:
 #   name: Pwned

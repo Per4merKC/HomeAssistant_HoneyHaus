@@ -13,10 +13,9 @@
     - !secret pwned_email_3
 
 # Spot Crime
-- platform: spotcrime
+- platform: crimereports
   name: Crimes
-  radius: 1
-  days: 14
+  radius: 1000
 
 # Air Visual
 - platform: airvisual
