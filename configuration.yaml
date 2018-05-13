@@ -9,6 +9,15 @@ homeassistant:
 
 frontend:
   javascript_version: latest
+  extra_html_url:
+    - /local/custom_ui/state-card-floorplan.html
+
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan
+    sidebar_icon: mdi:home
+    url_path: floorplan
+    config: !include floorplan.yaml
 
 map: 
 
@@ -113,7 +122,9 @@ binary_sensor:
   - platform: workday
     country: US
     province: KS
-
+  - platform: random
+    name: Floorplan
+    
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
 group: !include groups.yaml

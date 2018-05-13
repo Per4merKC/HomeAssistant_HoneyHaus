@@ -26,10 +26,10 @@ sensor.spdr_sp_retail_etf:
 sensor.bitcon:
   icon: mdi:bitcoin
 
-sensor.je_iphone_7_battery_level:
+sensor.iphone_battery_level:
   friendly_name: John's Batery Level
 
-sensor.je_iphone_7_battery_state:
+sensor.iphone_battery_state:
   friendly_name: John's Charging Status
 
 sensor.yr_symbol:
@@ -122,3 +122,7 @@ sensor.home_energy_monitor_2_100:
 !secret sensor_email_3:
   friendly_name: Hotmail
   hidden: true
+
+binary_sensor.floorplan:
+  custom_ui_state_card: state-card-floorplan
+  config: !include floorplan.yaml
