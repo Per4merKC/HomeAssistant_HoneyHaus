@@ -10,13 +10,6 @@ homeassistant:
 frontend:
   javascript_version: latest
 
-panel_custom:
-  - name: floorplan
-    sidebar_title: Floorplan
-    sidebar_icon: mdi:home
-    url_path: floorplan
-    config: !include floorplan.yaml
-
 map: 
 
 cloud:
@@ -106,8 +99,9 @@ vera:
   exclude: [34, 53, 71, 72, 73, 79, 95, 96]
 
 # usps:
-#    username: !secret usps_user
-#    password: !secret usps_password
+#   username: !secret usps_user
+#   password: !secret usps_password
+#   driver: phantomjs
 
 # camera:
 #  - platform: usps
