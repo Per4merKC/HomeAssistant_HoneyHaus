@@ -12,15 +12,12 @@
     - !secret pwned_email_2
     - !secret pwned_email_3
 
-# Spot Crime
-- platform: crimereports
-  name: Crimes
-  radius: 1000
-
 # Air Visual
 - platform: airvisual
   api_key: !secret airvisual_key
   monitored_conditions: us
+  show_on_map: false
+ 
 
 # Moon Information
 - platform: moon
@@ -36,6 +33,11 @@
     - summary
     - icon
     - nearest_storm_distance
+    - humidity
+    - visibility
+    - uv_index
+    - precip_probability
+    - precip_accumulation
 - platform: template
   sensors:
     dark_sky_template:
@@ -83,14 +85,3 @@
     - allergy_index_yesterday
     - disease_average_forecasted
 
-
-# Bathroom Time Adjustment for Morning
-# - platform: template
-#   sensors: 
-#     bathroom_delay:
-#       value_template: > 
-#           {% if (states.sensor.local_time.state > "05:00") and (states.sensor.local_time.state < "10:00") %}
-#             15
-#           {% else %}
-#             5
-#           {% endif %}

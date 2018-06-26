@@ -38,6 +38,7 @@ weather_tab:
   view: true
   entities: 
     - group.weather_card
+    - group.dark_sky_card
     - group.airvisual_card
     - group.pollen_card
     - sensor.season
@@ -147,6 +148,8 @@ iphone_info_card:
   entities:
     - sensor.iphone_battery_state
     - sensor.iphone_battery_level
+    - sensor.iphone_battery_state_2
+    - sensor.iphone_battery_level_2
 
 speed_test_card:
   name: Speedtest
@@ -164,6 +167,18 @@ alarm_card:
     - switch.front_door_92
     - switch.back_door_105
 
+dark_sky_card:
+  name: DarkSky
+  entities: 
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_nearest_storm_distance
+    - sensor.dark_sky_template
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_precip_accumulation
+    - sensor.dark_sky_precip_probability
+    - sensor.dark_sky_uv_index
+    - sensor.dark_sky_visibility
+
 weather_card:
   name: Weather
   entities:
@@ -171,9 +186,6 @@ weather_card:
     - sensor.moon
     - sensor.weather_temperature
     - sensor.weather_symbol
-    - sensor.dark_sky_summary
-    - sensor.dark_sky_nearest_storm_distance
-    - sensor.dark_sky_template
 
 pollen_card: 
   name: Pollen
@@ -192,6 +204,9 @@ airvisual_card:
     - sensor.us_air_pollution_level
     - sensor.us_air_quality_index
     - sensor.us_main_pollutant
+    - sensor.us_air_pollution_level_2
+    - sensor.us_air_quality_index_2
+    - sensor.us_main_pollutant_2
 
 pi_card:
   name: Raspberry Pi

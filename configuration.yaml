@@ -9,8 +9,6 @@ homeassistant:
 
 frontend:
   javascript_version: latest
-  extra_html_url:
-    - /local/custom_ui/state-card-floorplan.html
 
 panel_custom:
   - name: floorplan
@@ -51,10 +49,10 @@ google:
 
 hassio:
 
-shopping_list:
+#shopping_list:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+#conversation:
 
 # Enables support for tracking state changes over time
 history:
@@ -74,12 +72,12 @@ logbook:
     entities:
        - sensor.local_time
        - sensor.weather_symbol
+       - sensor.dark_sky_summary
+       - sensor.dark_sky_daily_high_temperature
+       - sensor.dark_sky_daily_low_temperature
     domains: 
       - sun
 
-# logger:
-#   default: debug
-    
 # Track the sun
 sun:
 
@@ -87,15 +85,12 @@ sun:
 #    pincode: '353-23-532'
 
 ios:
-  notify:
-  - platform: ios 
-    name: iOSApp
-    target: je_iphone
 
 device_tracker:
   - platform: nmap_tracker
     track_new_devices: false
     hosts: 
+      - 192.168.1.31
       - 192.168.1.110
       - 192.168.1.128
       - 192.168.1.111
@@ -122,8 +117,6 @@ binary_sensor:
   - platform: workday
     country: US
     province: KS
-  - platform: random
-    name: Floorplan
     
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
