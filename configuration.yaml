@@ -111,7 +111,22 @@ binary_sensor:
   - platform: workday
     country: US
     province: KS
-    
+
+input_boolean:
+  enable_security: 
+    name: Alarm Enabled
+    icon: mdi:shield-outline
+    initial: on
+  vacation_mode: 
+    name: Vacation Mode
+    icon: mdi:airplane
+    initial: off
+  status_in_bed: 
+    name: In Bed
+    icon: mdi:hotel
+    initial: off
+  
+
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
 group: !include groups.yaml
