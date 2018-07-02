@@ -55,6 +55,7 @@ history:
       - remote.apple_tv
       - sensor.moon
       - sensor.ssl_certificate_expiry
+      - sensor.since_last_boot
     domains: 
       - group
       - sun
@@ -125,8 +126,16 @@ input_boolean:
     name: In Bed
     icon: mdi:hotel
     initial: off
-  
 
+notify:
+  - name: honeyhausha
+    platform: twitter
+    consumer_key: !secret twitter_ha_consumer_key
+    consumer_secret: !secret twitter_ha_consumer_secret
+    access_token: !secret twitter_ha_access_token
+    access_token_secret: !secret twitter_ha_access_token_secret
+
+recorder: !include recorder.yaml
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
 group: !include groups.yaml

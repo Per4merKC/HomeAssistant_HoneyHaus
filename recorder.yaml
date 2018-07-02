@@ -1,0 +1,24 @@
+############################################################
+# recorder
+############################################################
+#db_url: sqlite:///data/home-assistant_v2.db
+purge_interval: 1
+purge_keep_days: 30
+# include:
+#   entities:
+#     - group.landscaping
+exclude:
+  domains:
+    - updater
+    - automation
+    - device_tracker
+    - group
+    - scene
+    - script
+  entities:
+    - sensor.uptime
+    - sensor.network_in_eth0
+    - sensor.network_out_eth0
+    - sensor.since_last_boot
+    - sun.sun
+    - zone.home
