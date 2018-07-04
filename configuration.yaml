@@ -54,9 +54,9 @@ notify:
     access_token: !secret twitter_ha_access_token
     access_token_secret: !secret twitter_ha_access_token_secret
 
+automation: !include automations.yaml
+group: !include_dir_merge_named groups
+script: !include scripts.yaml
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
-group: !include groups.yaml
-automation: !include automations.yaml
 zone: !include zones.yaml
-script: !include scripts.yaml

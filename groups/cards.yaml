@@ -1,0 +1,88 @@
+# GROUPS (cards)
+living_room_card:
+  name: Living Room
+  control: hidden
+  view: false
+  entities:
+    - light.tree_light_22
+    - binary_sensor.front_door_92
+    - group.can_lights_group
+
+can_lights_group:
+  name: Living Room Up Lights
+  icon: mdi:lava-lamp
+  view: false
+  entities:
+    - light.north_can_light_63
+    - light.south_can_light_65
+
+dining_room_card:
+  name: Dining Room
+  control: hidden
+  view: false
+  entities:
+    - climate.thermostat_4
+    - light.chandelier_10
+
+sun_room_card:
+  name: Sun Room
+  control: hidden
+  view: false
+  icon: mdi:sun
+  entities:
+    - binary_sensor.back_door_105
+
+kitchen_card:
+  name: Kitchen
+  control: hidden
+  view: false
+  entities:
+    - light.kitchen_lights_26
+
+bathroom_card:
+  name: Bathroom
+  control: hidden
+  view: false
+  entities:
+    - light.over_sink_light_53
+    - device_tracker.withings_scale
+
+guest_room_card:
+  name: Guest Bedroom
+  control: hidden
+  view: false
+  entities:
+    - light.guest_room_light_27
+
+alarm_card:
+  name: Alarm Mode Devices
+  entities:
+    - switch.eye_motion_71
+    - switch.stairway_motion_80
+    - switch.flood_sensor_64
+    - switch.front_door_92
+    - switch.back_door_105
+
+# google_wifi_card:
+#   name: Google Wifi Status
+#   entities: 
+#     - sensor.google_wifi_mesh_current_version
+#     - sensor.google_wifi_mesh_last_restart
+#     - sensor.google_wifi_mesh_local_ip
+#     - sensor.google_wifi_mesh_new_version
+#     - sensor.google_wifi_mesh_status
+#     - sensor.google_wifi_mesh_uptime
+
+# crimes_card:
+#   name: Crimes
+#   entities: 
+#     - sensor.crimes
+
+# email_breach_card:
+#   name: Pwned
+#   entities: 
+#     - !secret sensor_email_1
+#     - !secret sensor_email_2
+#     - !secret sensor_email_3
+
+

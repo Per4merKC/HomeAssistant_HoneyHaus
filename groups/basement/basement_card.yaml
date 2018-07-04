@@ -1,0 +1,11 @@
+basement_card:
+  name: Basement
+  control: hidden
+  view: false
+  entities:
+    - sensor.eye_temperature_72
+    - binary_sensor.eye_motion_71
+    - sensor.eye_lux_73
+    - switch.washer_fan_38
+    - switch.washer_power_strip_36
+    - light.washing_light_97

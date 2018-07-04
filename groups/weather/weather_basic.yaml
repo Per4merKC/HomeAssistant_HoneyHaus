@@ -1,0 +1,7 @@
+weather_card:
+  name: Weather
+  entities:
+    - sun.sun
+    - sensor.moon
+    - sensor.weather_temperature
+    - sensor.weather_symbol

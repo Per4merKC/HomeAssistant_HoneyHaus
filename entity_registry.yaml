@@ -93,16 +93,6 @@ sensor.allergy_index_forecasted_average_2:
   name:
   platform: pollen
   unique_id: 66202_allergy_index_forecasted_average
-sensor.iphone_battery_state_2:
-  config_entry_id:
-  name:
-  platform: ios
-  unique_id: state_iphone
-sensor.iphone_battery_level_2:
-  config_entry_id:
-  name:
-  platform: ios
-  unique_id: level_iphone
 sensor.us_air_pollution_level_2:
   config_entry_id:
   name:

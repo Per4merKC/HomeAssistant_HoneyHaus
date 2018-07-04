@@ -1,0 +1,45 @@
+# Views are the tabs across the top of the web interface.
+
+basement_tab:
+  name: Basement
+  icon: mdi:washing-machine
+  view: true
+  entities:
+    - group.basement_card
+    - group.stairway_card
+    - binary_sensor.flood_sensor_64
+    - binary_sensor.stairway_motion_80
+    - switch.appliance_module_37
+    - switch.appliance_module_2_39
+    - switch.appliance_module_3_40
+    - switch.appliance_module_4_59
+
+information_tab:
+  name: Information
+  icon: mdi:information
+  view: true
+  entities:
+    - group.iphone_info_card
+    - group.pi_card
+    - group.energy_card
+    - group.finance_card
+    - group.google_wifi_card
+    - group.crypto_curr_card
+    - group.travel_time_card
+    - group.speed_test_card
+    - group.crimes_card
+    - device_tracker.je_iphone
+    - device_tracker.rb_iphone
+    - binary_sensor.floorplan
+#    - group.email_breach_card
+
+weather_tab: 
+  name: Weather
+  icon: mdi:weather-partlycloudy
+  view: true
+  entities: 
+    - group.weather_card
+    - group.dark_sky_card
+    - group.airvisual_card
+    - group.pollen_card
+    - sensor.season

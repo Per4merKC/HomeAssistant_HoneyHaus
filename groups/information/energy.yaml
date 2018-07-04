@@ -1,0 +1,6 @@
+energy_card:
+  name: Home Energy
+  entities:
+    - sensor.home_energy_monitor_98
+    - sensor.home_energy_monitor_1_99
+    - sensor.home_energy_monitor_2_100

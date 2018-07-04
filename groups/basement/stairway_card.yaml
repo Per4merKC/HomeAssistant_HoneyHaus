@@ -1,0 +1,6 @@
+stairway_card:
+  name: Stairway
+  control: hidden
+  view: false
+  entities: 
+    - light.stairwell_light_78

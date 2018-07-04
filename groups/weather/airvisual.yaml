@@ -1,0 +1,9 @@
+airvisual_card:
+  name: AirVisual
+  entities: 
+    - sensor.us_air_pollution_level
+    - sensor.us_air_quality_index
+    - sensor.us_main_pollutant
+    - sensor.us_air_pollution_level_2
+    - sensor.us_air_quality_index_2
+    - sensor.us_main_pollutant_2
