@@ -1,84 +1,20 @@
 homeassistant:
   name: HoneyHaus
-  latitude: 39.030158
-  longitude: -94.673839
-  elevation: 294
+  latitude: !secret ha_lat
+  longitude: !secret ha_lon
+  elevation: !secret ha_ele
   unit_system: imperial
   time_zone: America/Chicago
+
+  # load packages (split-configuration format)
+  packages: !include_dir_named components
+
+  # customize individual entries
   customize: !include customize.yaml
 
-frontend:
-  javascript_version: latest
-
-map: 
-
-cloud:
-
-config:
-
-http:
-  api_password: !secret http_password
-  ssl_certificate: !secret http_ssl_certificate
-  ssl_key: !secret http_ssl_key
-  trusted_networks:
-    - 127.0.0.1
-    - ::1
-    - 192.168.1.0/24
-  ip_ban_enabled: true
-  login_attempts_threshold: 5
-  base_url: honeyhaus.duckdns.org
-
-updater:
-  include_used_components: true
-
-# Discover some devices automatically
-discovery:
-  ignore: google_cast
-
-google: 
-  client_id: !secret google_calendar_oauth_client
-  client_secret: !secret google_calendar_oauth_secret
-  track_new_calendar: false
-
-hassio:
-
-#shopping_list:
-
-# Allows you to issue voice commands from the frontend in enabled browsers
-#conversation:
-
-# Enables support for tracking state changes over time
-history:
-  exclude: 
-    entities: 
-      - device_tracker.withings_scale
-      - remote.apple_tv
-      - sensor.moon
-      - sensor.ssl_certificate_expiry
-      - sensor.since_last_boot
-    domains: 
-      - group
-      - sun
-
-# View all events in a logbook
-logbook:
-  exclude: 
-    entities:
-       - sensor.local_time
-       - sensor.weather_symbol
-       - sensor.dark_sky_summary
-       - sensor.dark_sky_daily_high_temperature
-       - sensor.dark_sky_daily_low_temperature
-    domains: 
-      - sun
-
-# Track the sun
-sun:
-
-# homekit: 
-#    pincode: '353-23-532'
-
-ios:
+# # Discover some devices automatically
+# discovery:
+#   ignore: google_cast
 
 device_tracker:
   - platform: nmap_tracker
@@ -90,23 +26,6 @@ device_tracker:
       - 192.168.1.111
     interval_seconds: 15
 
-apple_tv:
-  - host: 192.168.1.120
-    login_id: !secret apple_tv_id
-    start_off: true
-
-vera:
-  vera_controller_url: http://192.168.1.224:3480
-  exclude: [34, 53, 71, 72, 73, 79, 95, 96]
-
-# usps:
-#   username: !secret usps_user
-#   password: !secret usps_password
-#   driver: phantomjs
-
-# camera:
-#  - platform: usps
-#    scan_interval: 5
 
 binary_sensor:
   - platform: workday
@@ -135,7 +54,6 @@ notify:
     access_token: !secret twitter_ha_access_token
     access_token_secret: !secret twitter_ha_access_token_secret
 
-recorder: !include recorder.yaml
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
 group: !include groups.yaml

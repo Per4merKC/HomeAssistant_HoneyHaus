@@ -1,0 +1,12 @@
+# The ios component is the Home Assistant part for using the 
+# iOS companion app. 
+#
+#  https://www.home-assistant.io/components/ios/
+#
+# For further details please check the iOS 
+# section in the documentation
+# 
+# https://www.home-assistant.io/docs/ecosystem/ios/
+#
+ios:
+
