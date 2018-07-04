@@ -108,3 +108,8 @@ sensor.us_air_quality_index_2:
   name:
   platform: airvisual
   unique_id: 39.030158,-94.673839_us_air_quality_index
+media_player.living_room:
+  config_entry_id: e0907799cbca438ba268ee5a7071531f
+  name:
+  platform: cast
+  unique_id: c63fc068-248e-37f2-139b-829008056ede
