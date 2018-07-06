@@ -9,6 +9,7 @@ basement_tab:
     - group.stairway_card
     - binary_sensor.flood_sensor_64
     - binary_sensor.stairway_motion_80
+    - binary_sensor.tilt_124
     - switch.appliance_module_37
     - switch.appliance_module_2_39
     - switch.appliance_module_3_40
