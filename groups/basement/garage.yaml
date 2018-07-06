@@ -1,0 +1,6 @@
+garage_card:
+  name: Garage
+  control: hidden
+  view: false
+  entities:
+    - binary_sensor.tilt_124

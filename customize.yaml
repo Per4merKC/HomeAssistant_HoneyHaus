@@ -47,6 +47,10 @@ binary_sensor.flood_sensor_64:
   friendly_name: Basement Flood
   device_class: moisture
 
+binary_sensor.tilt_124:
+  friendly_name: Garage Door
+  device_class: garage_door
+  
 binary_sensor.back_door_105:
   device_class: door 
 

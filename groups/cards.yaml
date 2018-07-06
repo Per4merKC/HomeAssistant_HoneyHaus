@@ -62,6 +62,7 @@ alarm_card:
     - switch.flood_sensor_64
     - switch.front_door_92
     - switch.back_door_105
+    - switch.tilt_124
 
 # google_wifi_card:
 #   name: Google Wifi Status
