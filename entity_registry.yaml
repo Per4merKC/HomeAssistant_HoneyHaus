@@ -113,3 +113,18 @@ media_player.living_room:
   name:
   platform: cast
   unique_id: c63fc068-248e-37f2-139b-829008056ede
+sensor.allergy_index_forecasted_average_3:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 66202_allergy_average_forecasted
+sensor.allergy_index_historical_average_3:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 66202_allergy_average_historical
+sensor.cold__flu_forecasted_average_3:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 66202_disease_average_forecasted

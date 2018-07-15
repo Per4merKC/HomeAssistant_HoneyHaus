@@ -35,9 +35,17 @@ sensor.iphone_battery_state:
 sensor.yr_symbol:
   friendly_name: Weather
 
-binary_sensor.eye_motion_71:
+binary_sensor.eye_motion_142:
   friendly_name: Basement Motion
   device_class: motion
+
+sensor.3_in_1_sensor_temperature_143:
+  friendly_name: Basement Temperature
+  device_class: temperature
+
+sensor.3_in_1_sensor_light_144: 
+  friendly_name: Basment Lux
+  device_class: illuminance
 
 binary_sensor.stairway_motion_80:
   friendly_name: Stairway Motion
@@ -51,10 +59,10 @@ binary_sensor.tilt_124:
   friendly_name: Garage Door
   device_class: garage_door
   
-binary_sensor.back_door_105:
+binary_sensor.back_door_134:
   device_class: door 
 
-binary_sensor.front_door_92:
+binary_sensor.front_door_135:
   device_class: door 
 
 sensor.home_to_sprint:

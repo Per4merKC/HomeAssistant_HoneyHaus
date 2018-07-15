@@ -2,9 +2,9 @@ pollen_card:
   name: Pollen
   icon: mdi:flower
   entities:
-    - sensor.allergy_index_forecasted_average_2
-    - sensor.allergy_index_historical_average_2
+    - sensor.allergy_index_forecasted_average_3
+    - sensor.allergy_index_historical_average_3
     - sensor.allergy_index_yesterday_2
     - sensor.allergy_index_today_2
     - sensor.allergy_index_tomorrow_2
-    - sensor.cold__flu_forecasted_average_2
+    - sensor.cold__flu_forecasted_average_3

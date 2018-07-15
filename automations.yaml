@@ -2,7 +2,7 @@
   alias: Basement Motion Detected
   hide_entity: true
   trigger:
-  - entity_id: binary_sensor.eye_motion_71
+  - entity_id: binary_sensor.eye_motion_142
     platform: state
     from: 'off'
     to: 'on'
@@ -26,7 +26,7 @@
   alias: Front Door - Not Home
   hide_entity: true
   trigger:
-  - entity_id: binary_sensor.front_door_92
+  - entity_id: binary_sensor.front_door_135
     platform: state
     from: 'off'
     to: 'on'
@@ -48,7 +48,7 @@
   alias: HVAC on and Door Open Long
   hide_entity: true
   trigger:
-    - entity_id: binary_sensor.front_door_92
+    - entity_id: binary_sensor.front_door_135
       platform: state
       from: 'off'
       to: 'on'
@@ -102,7 +102,7 @@
   alias: Back Door - Not Home
   hide_entity: true
   trigger:
-  - entity_id: binary_sensor.back_door_105
+  - entity_id: binary_sensor.back_door_134
     platform: state
     from: 'off'
     to: 'on'
@@ -124,7 +124,7 @@
   alias: HVAC on and Door Open Long
   hide_entity: true
   trigger:
-    - entity_id: binary_sensor.back_door_105
+    - entity_id: binary_sensor.back_door_134
       platform: state
       from: 'off'
       to: 'on'

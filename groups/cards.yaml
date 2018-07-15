@@ -5,7 +5,7 @@ living_room_card:
   view: false
   entities:
     - light.tree_light_22
-    - binary_sensor.front_door_92
+    - binary_sensor.front_door_135
     - group.can_lights_group
 
 can_lights_group:
@@ -30,7 +30,7 @@ sun_room_card:
   view: false
   icon: mdi:sun
   entities:
-    - binary_sensor.back_door_105
+    - binary_sensor.back_door_134
 
 kitchen_card:
   name: Kitchen
@@ -57,11 +57,11 @@ guest_room_card:
 alarm_card:
   name: Alarm Mode Devices
   entities:
-    - switch.eye_motion_71
+    - switch.eye_motion_142
     - switch.stairway_motion_80
     - switch.flood_sensor_64
-    - switch.front_door_92
-    - switch.back_door_105
+    - switch.front_door_135
+    - switch.back_door_134
     - switch.tilt_124
 
 # google_wifi_card:
