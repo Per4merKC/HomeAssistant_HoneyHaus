@@ -7,7 +7,7 @@
   latitude: 38.9169821
   longitude: -94.65785979999998
   icon: mdi:cellphone-iphone
-  radius: 300
+  radius: 325
 
 # Fitness
 - name: Inspire Fit
@@ -111,11 +111,6 @@
   icon: mdi:ticket-account
   radius: 100
 
-- name: Barn Players
-  latitude: 39.019416
-  longitude: -94.657185
-  icon: mdi:ticket-account
-  
 - name: Arts Asylum
   latitude: 39.103340
   longitude: -94.570579
@@ -136,7 +131,7 @@
   latitude: 38.918843
   longitude: -94.653471
   icon: mdi:ticket-account
-  radius: 25
+  radius: 10
 
 - name: OCTA
   latitude: 38.880763
@@ -202,4 +197,3 @@
   latitude: 39.053695
   longitude: -94.589385
   icon: mdi:martini
-
