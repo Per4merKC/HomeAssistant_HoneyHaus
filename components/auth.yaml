@@ -1,0 +1,4 @@
+auth_providers:
+  - type: homeassistant
+  - type: legacy_api_password
+  - type: trusted_networks
