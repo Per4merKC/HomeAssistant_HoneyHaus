@@ -1,0 +1,24 @@
+title: Honey Haus
+resources: 
+  - url: /local/my-custom-card.js
+    type: js
+  - url: /local/my-webfont.css
+    type: css
+
+views:
+  - title: Home
+    icon: mdi:home-assistant
+    id: home
+    background: radial-gradient(green,blue)
+    cards: 
+      - type: entity-filter
+        entities: 
+          - device_tracker.je_iphone
+          - device_tracker.rb_iphone
+        state_filter:
+          - 'home'
+        card: 
+          type: glance
+          title: Home
+  - title: Weather
+    icon: mdi:weather

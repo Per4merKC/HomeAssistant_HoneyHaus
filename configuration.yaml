@@ -5,6 +5,10 @@ homeassistant:
   elevation: !secret ha_ele
   unit_system: imperial
   time_zone: America/Chicago
+  auth_providers:
+    - type: homeassistant
+    - type: legacy_api_password
+    - type: trusted_networks
 
   # load packages (split-configuration format)
   packages: !include_dir_named components
