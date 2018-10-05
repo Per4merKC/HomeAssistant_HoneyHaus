@@ -153,3 +153,17 @@
       message: Back door open and HVAC is running
       title: HVAC Alert
     service: notify.ios_je_iphone
+
+- id: jwe008
+  alias: Doorbell Pressed
+  hide_entity: true
+  trigger:
+  - platform: mqtt
+    topic: doorbell
+    payload: 'Ding'
+  action:
+  - alias: Doorbell Pressed
+    data:
+      message: Someone pressed the front doorbell
+      title: Doorbell
+    service: notify.ios_je_iphone

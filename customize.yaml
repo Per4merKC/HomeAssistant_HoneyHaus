@@ -90,6 +90,11 @@ scene.goodmorning:
 sensor.local_time:
   hidden: true
 
+sensor.doorbell:
+  icon: mdi:bell
+  templates:
+    icon: "if (state === 'Ding') return 'mdi:bell-ring'; else return 'mdi:bell'"
+
 binary_sensor.workday_sensor:
   hidden: true
 
@@ -117,3 +122,4 @@ sensor.home_energy_monitor_2_100:
 !secret sensor_email_3:
   friendly_name: Hotmail
   hidden: true
+
