@@ -30,3 +30,11 @@ ip_bans.yaml
 /icloud/*
 entity_registry.yaml
 home-assistant_v2.db*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+# C extensions
+*.so
+*.pickle

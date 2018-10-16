@@ -45,8 +45,9 @@ bathroom_card:
   control: hidden
   view: false
   entities:
-    - light.over_sink_light_53
+    - light.bathroom_lights
     - device_tracker.withings_scale
+    - sensor.tradfri_remote_control
 
 guest_room_card:
   name: Guest Bedroom

@@ -123,3 +123,27 @@ sensor.home_energy_monitor_2_100:
   friendly_name: Hotmail
   hidden: true
 
+sensor.tradfri_remote_control:
+  friendly_name: Bathroom Remote
+  device_class: battery
+
+light.bathroom_bulb_1:
+  hidden: true
+
+light.bathroom_bulb_2:
+  hidden: true
+
+light.bathroom_bulb_3:
+  hidden: true
+
+light.bathroom_bulb_4:
+  hidden: true
+
+media_player.this_device:
+  hidden: true
+
+sensor.home_to_sprint:
+  icon: mdi:office-building
+
+sensor.john_to_home:
+  icon: mdi:home-map-marker

@@ -22,7 +22,7 @@ homeassistant:
 
 device_tracker:
   - platform: nmap_tracker
-    track_new_devices: false
+    track_new_devices: true
     hosts: 
       - 192.168.1.31
       - 192.168.1.110
@@ -30,6 +30,14 @@ device_tracker:
       - 192.168.1.111
     interval_seconds: 15
 
+light:
+  - platform: group
+    name: Bathroom Lights
+    entities:
+      - light.bathroom_bulb_1
+      - light.bathroom_bulb_2
+      - light.bathroom_bulb_3
+      - light.bathroom_bulb_4
 
 binary_sensor:
   - platform: workday

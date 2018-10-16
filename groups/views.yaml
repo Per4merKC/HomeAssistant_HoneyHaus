@@ -1,4 +1,12 @@
 # Views are the tabs across the top of the web interface.
+livingroom_tab:
+  name: Living Room
+  icon: mdi:sofa
+  view: true
+  entities:
+    - media_player.living_room_dot
+    - remote.apple_tv
+    - media_player.living_room
 
 basement_tab:
   name: Basement
