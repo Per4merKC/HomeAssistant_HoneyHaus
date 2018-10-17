@@ -47,7 +47,7 @@ bathroom_card:
   entities:
     - light.bathroom_lights
     - device_tracker.withings_scale
-    - sensor.tradfri_remote_control
+    - sensor.bathroom_remote
 
 guest_room_card:
   name: Guest Bedroom
@@ -55,6 +55,13 @@ guest_room_card:
   view: false
   entities:
     - light.guest_room_light_27
+
+computer_room_card:
+  name: Computer Room
+  view: false
+  entities: 
+    - light.desk_lights
+    - sensor.desk_dimmer
 
 alarm_card:
   name: Alarm Mode Devices

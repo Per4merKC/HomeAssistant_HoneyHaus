@@ -21,4 +21,11 @@ views:
           type: glance
           title: Home
   - title: Weather
-    icon: mdi:weather
+    icon: mdi:weather-partlycloudy
+    id: weather
+    cards:
+      - type: weather-forecast
+        entity: weather.dark_sky
+  - title: Living Room
+    icon: mdi:sofa
+    id: living_room

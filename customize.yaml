@@ -67,9 +67,11 @@ binary_sensor.front_door_135:
 
 sensor.home_to_sprint:
   hidden: false
+  icon: mdi:office-building
 
 sensor.john_to_home: 
   hidden: false
+  icon: mdi:home-map-marker
 
 sensor.dark_sky_icon:
   hidden: true
@@ -123,7 +125,7 @@ sensor.home_energy_monitor_2_100:
   friendly_name: Hotmail
   hidden: true
 
-sensor.tradfri_remote_control:
+sensor.bathroom_remote:
   friendly_name: Bathroom Remote
   device_class: battery
 
@@ -142,8 +144,7 @@ light.bathroom_bulb_4:
 media_player.this_device:
   hidden: true
 
-sensor.home_to_sprint:
-  icon: mdi:office-building
+sensor.desk_dimmer:
+  friendly_name: Desk Remote
+  device_class: battery
 
-sensor.john_to_home:
-  icon: mdi:home-map-marker
