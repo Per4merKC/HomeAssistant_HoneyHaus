@@ -162,8 +162,12 @@
     topic: doorbell
     payload: 'Ding'
   action:
-  - alias: Doorbell Pressed
-    data:
-      message: Someone pressed the front doorbell
-      title: Doorbell
     service: notify.ios_je_iphone
+    data:
+      title: Doorbell
+      message: Someone pressed the front doorbell
+      data: 
+        attachment: 
+          url: !secret ip_camera_image_url
+          content-type: jpeg
+          hide-thumbnail: false
