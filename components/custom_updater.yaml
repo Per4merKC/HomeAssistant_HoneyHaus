@@ -1,0 +1,5 @@
+custom_updater:
+  track:
+    - cards
+    - components
+    - python_scripts

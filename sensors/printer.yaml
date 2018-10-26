@@ -1,0 +1,5 @@
+# - platform: command_line
+#   command: curl http://192.168.1.55/etc/view_config.html | awk '/toner.gif'
+#   name: Printer Black
+#   unit_of_measure: '%'
+#   scan_interval: 1800

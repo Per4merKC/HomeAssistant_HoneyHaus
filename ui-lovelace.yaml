@@ -1,9 +1,9 @@
 title: Honey Haus
 resources: 
-  - url: /local/my-custom-card.js
+  - url: /local/tracker-card.js?v=0.1.5
     type: js
-  - url: /local/my-webfont.css
-    type: css
+  - url: /local/monster-card.js?v=0.2.3
+    type: js
 
 views:
   - title: Home
@@ -20,12 +20,48 @@ views:
         card: 
           type: glance
           title: Home
+  
   - title: Weather
     icon: mdi:weather-partlycloudy
     id: weather
     cards:
       - type: weather-forecast
         entity: weather.dark_sky
+  
   - title: Living Room
     icon: mdi:sofa
     id: living_room
+  
+  - title: Settings
+    icon: mdi:settings
+    id: settings
+    cards:
+      - type: custom:monster-card
+        show_empty: false
+        card:
+          type: glance
+          title: Low Battery Devices
+        filter: 
+          include:
+            - attributes:
+                battery_level: '< 25'
+            - attributes: 
+                battery: '< 25'
+          exclude:
+            - entity_id: sensor.home_energy_monitor_98
+      - type: custom:monster-card
+        show_empty: false
+        card: 
+          type: entities
+          title: Broken?
+        filter:
+          include:
+            - state: "unknown"
+            - state: "unavailable"
+          exclude:
+            - entity_id: group.*
+      - type: custom:tracker-card
+        trackers: 
+          - sensor.custom_card_tracker
+          - sensor.custom_component_tracker
+          - sensor.custom_python_script_tracker
