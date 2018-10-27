@@ -112,7 +112,6 @@ sensor.home_energy_monitor_2_100:
   friendly_name: Electric Leg II
   icon: mdi:flash
 
-
 !secret sensor_email_1:
   friendly_name: Gmail
   hidden: true
@@ -151,3 +150,5 @@ sensor.desk_dimmer:
 media_player.johns_alexa_apps:
   hidden: true
 
+light.outside_lights_147: 
+  icon: 

@@ -8,6 +8,7 @@ living_room_card:
     - binary_sensor.front_door_135
     - group.can_lights_group
     - sensor.doorbell
+    - light.outside_lights_147
 
 can_lights_group:
   name: Living Room Up Lights
