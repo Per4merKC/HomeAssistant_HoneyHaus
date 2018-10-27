@@ -148,3 +148,6 @@ sensor.desk_dimmer:
   friendly_name: Desk Remote
   device_class: battery
 
+media_player.johns_alexa_apps:
+  hidden: true
+

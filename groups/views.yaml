@@ -47,8 +47,8 @@ weather_tab:
   icon: mdi:weather-partlycloudy
   view: true
   entities: 
+    - weather.dark_sky
     - group.weather_card
-    - group.dark_sky_card
     - group.airvisual_card
     - group.pollen_card
     - sensor.season

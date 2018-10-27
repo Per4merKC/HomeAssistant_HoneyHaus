@@ -10,15 +10,15 @@
     - name: Google
       currency: USD
       symbol: GOOGL
-    - name: Vanguard Mega Cap ETF
-      currency: USD
-      symbol: MGC
-    - name: Workplace Equality Portfolio
-      currency: USD
-      symbol: EQLT
-    - name: SPDR S&P Retail (ETF)
-      currency: USD
-      symbol: XRT
-    - name: Schwab US Dividends Equity ETF
-      currency: USD
-      symbol: SCHD
+    # - name: Vanguard Mega Cap ETF
+    #   currency: USD
+    #   symbol: MGC
+    # - name: Workplace Equality Portfolio
+    #   currency: USD
+    #   symbol: EQLT
+    # - name: SPDR S&P Retail (ETF)
+    #   currency: USD
+    #   symbol: XRT
+    # - name: Schwab US Dividends Equity ETF
+    #   currency: USD
+    #   symbol: SCHD

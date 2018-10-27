@@ -1,4 +1,5 @@
 custom_updater:
+  hide_sensor: true
   track:
     - cards
     - components

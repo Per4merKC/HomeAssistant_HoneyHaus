@@ -1,5 +1,5 @@
 title: Honey Haus
-resources: 
+resources:
   - url: /local/tracker-card.js?v=0.1.5
     type: js
   - url: /local/monster-card.js?v=0.2.3
@@ -10,58 +10,63 @@ views:
     icon: mdi:home-assistant
     id: home
     background: radial-gradient(green,blue)
-    cards: 
-      - type: entity-filter
-        entities: 
+    cards:
+      - id: 2f1682241ea546e6a908a3452e154d73  # Automatically created id
+        type: entity-filter
+        entities:
           - device_tracker.je_iphone
           - device_tracker.rb_iphone
         state_filter:
-          - 'home'
-        card: 
+          - home
+        card:
           type: glance
           title: Home
-  
+
   - title: Weather
     icon: mdi:weather-partlycloudy
     id: weather
     cards:
-      - type: weather-forecast
+      - id: 1e67401def4c42919aca0a5cb37b386d  # Automatically created id
+        type: weather-forecast
         entity: weather.dark_sky
-  
+
   - title: Living Room
     icon: mdi:sofa
     id: living_room
-  
+
   - title: Settings
     icon: mdi:settings
     id: settings
     cards:
-      - type: custom:monster-card
+      - id: 497f6a4ba7e848fc8d14b27ec90bfc52  # Automatically created id
+        type: custom:monster-card
         show_empty: false
         card:
           type: glance
           title: Low Battery Devices
-        filter: 
+        filter:
           include:
             - attributes:
-                battery_level: '< 25'
-            - attributes: 
-                battery: '< 25'
+                battery_level: < 25
+            - attributes:
+                battery: < 25
           exclude:
             - entity_id: sensor.home_energy_monitor_98
-      - type: custom:monster-card
+      - id: da181784eecb4e25b451c60d808bf0be  # Automatically created id
+        type: custom:monster-card
         show_empty: false
-        card: 
+        card:
           type: entities
           title: Broken?
         filter:
           include:
-            - state: "unknown"
-            - state: "unavailable"
+            - state: unknown
+            - state: unavailable
           exclude:
             - entity_id: group.*
-      - type: custom:tracker-card
-        trackers: 
+      - id: 4d519740e9b9440684d4a3c0019ac2d8  # Automatically created id
+        type: custom:tracker-card
+        trackers:
           - sensor.custom_card_tracker
           - sensor.custom_component_tracker
           - sensor.custom_python_script_tracker
