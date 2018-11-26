@@ -32,7 +32,22 @@ views:
 
   - title: Living Room
     icon: mdi:sofa
-    id: living_room
+    cards: 
+      - type: light
+        entity: light.north_can_light_63
+        name: North Can Light
+      - type: light
+        entity: light.south_can_light_65
+        name: South Can Light
+
+  - title: Dining Room
+    icon: mdi:silverware
+    cards: 
+      - type: light
+        entity: light.chandelier_10
+        name: Chandelier
+      - type: thermostat
+        entity: climate.thermostat_4
 
   - title: Settings
     icon: mdi:settings

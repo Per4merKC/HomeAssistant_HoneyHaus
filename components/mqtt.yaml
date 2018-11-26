@@ -1,4 +1,4 @@
-mqtt:
-  broker: core-mosquitto
-  username: !secret mqtt_user
-  password: !secret mqtt_pass
+# mqtt:
+#   broker: core-mosquitto
+#   username: !secret mqtt_user
+#   password: !secret mqtt_pass
