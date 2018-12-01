@@ -1,5 +1,5 @@
 - platform: miflora
-  mac: 'C4:7C:8D:67:69:A4'
+  mac: C4:7C:8D:67:69:A4
   name: Pinapple
   force_update: false
   median: 3
@@ -11,7 +11,7 @@
     - battery
 
 - platform: miflora
-  mac: 'C4:7C:8D:67:68:B3'
+  mac: C4:7C:8D:67:68:B3
   name: Ficus
   force_update: false
   median: 3
@@ -23,7 +23,7 @@
     - battery
 
 - platform: miflora
-  mac: 'C4:7C:8D:67:68:AF'
+  mac: C4:7C:8D:67:68:AF
   name: Banana
   force_update: false
   median: 3
@@ -35,7 +35,7 @@
     - battery
 
 - platform: miflora
-  mac: 'C4:7C:8D:67:68:F4'
+  mac: C4:7C:8D:67:68:F4
   name: Philodendron
   force_update: false
   median: 3

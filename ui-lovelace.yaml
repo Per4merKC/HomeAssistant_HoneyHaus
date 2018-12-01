@@ -7,11 +7,11 @@ resources:
 
 views:
   - title: Home
-    icon: mdi:home-assistant
     id: home
+    icon: mdi:home-assistant
     background: radial-gradient(green,blue)
     cards:
-      - id: 2f1682241ea546e6a908a3452e154d73  # Automatically created id
+      - id: home_1
         type: entity-filter
         entities:
           - device_tracker.je_iphone
@@ -23,40 +23,64 @@ views:
           title: Home
 
   - title: Weather
-    icon: mdi:weather-partlycloudy
     id: weather
+    icon: mdi:weather-partlycloudy
     cards:
-      - id: 1e67401def4c42919aca0a5cb37b386d  # Automatically created id
+      - id: weather_1
         type: weather-forecast
         entity: weather.dark_sky
 
   - title: Living Room
+    id: living
     icon: mdi:sofa
-    cards: 
-      - type: light
+    cards:
+      - id: living_1
+        type: light
         entity: light.north_can_light_63
         name: North Can Light
-      - type: light
+      - id: living_2
+        type: light
         entity: light.south_can_light_65
         name: South Can Light
 
   - title: Dining Room
+    id: dining
     icon: mdi:silverware
-    cards: 
-      - type: light
+    cards:
+      - id: dining_1
+        type: light
         entity: light.chandelier_10
         name: Chandelier
-      - type: thermostat
+      - id: dining_2
+        type: thermostat
         entity: climate.thermostat_4
 
-  - title: Settings
-    icon: mdi:settings
-    id: settings
+  - title: Plants
+    id: plants
+    icon: mdi:flower
     cards:
-      - id: 497f6a4ba7e848fc8d14b27ec90bfc52  # Automatically created id
+      - id: plant_1
+        type: plant-status
+        entity: plant.pineapple
+      - id: plant_2
+        type: plant-status
+        entity: plant.banana
+      - id: plant_3
+        type: plant-status
+        entity: plant.ficus
+      - id: plant_4
+        type: plant-status
+        entity: plant.philodendron
+
+  - title: Settings
+    id: settings
+    icon: mdi:settings
+    cards:
+      - id: settings_1
         type: custom:monster-card
         show_empty: false
         card:
+          id: settings_1_1
           type: glance
           title: Low Battery Devices
         filter:
@@ -67,10 +91,11 @@ views:
                 battery: < 25
           exclude:
             - entity_id: sensor.home_energy_monitor_98
-      - id: da181784eecb4e25b451c60d808bf0be  # Automatically created id
+      - id: settings_2
         type: custom:monster-card
         show_empty: false
         card:
+          id: settings_2_1
           type: entities
           title: Broken?
         filter:
@@ -79,7 +104,7 @@ views:
             - state: unavailable
           exclude:
             - entity_id: group.*
-      - id: 4d519740e9b9440684d4a3c0019ac2d8  # Automatically created id
+      - id: settings_3
         type: custom:tracker-card
         trackers:
           - sensor.custom_card_tracker
