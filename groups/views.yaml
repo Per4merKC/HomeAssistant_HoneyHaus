@@ -52,3 +52,13 @@ weather_tab:
     - group.airvisual_card
     - group.pollen_card
     - sensor.season
+
+plant_tab: 
+  name: Plants
+  icon: mdi:flower
+  view: true
+  entities: 
+    - group.philodendron_card
+    - group.ficus_card
+    - group.pineapple_card
+    - group.banana_card

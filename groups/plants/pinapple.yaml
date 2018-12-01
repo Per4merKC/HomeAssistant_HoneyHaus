@@ -1,0 +1,8 @@
+pineapple_card:
+  name: Pineapple
+  entities: 
+    - sensor.pinapple_moisture
+    - sensor.pinapple_light_intensity
+    - sensor.pinapple_conductivity
+    - sensor.pinapple_temperature
+    - sensor.pinapple_battery

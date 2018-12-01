@@ -1,0 +1,8 @@
+philodendron_card:
+  name: Philodendron
+  entities: 
+    - sensor.philodendron_moisture
+    - sensor.philodendron_light_intensity
+    - sensor.philodendron_conductivity
+    - sensor.philodendron_temperature
+    - sensor.philodendron_battery

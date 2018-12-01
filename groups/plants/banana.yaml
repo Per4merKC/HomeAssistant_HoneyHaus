@@ -1,0 +1,8 @@
+banana_card:
+  name: Banana Tree
+  entities: 
+    - sensor.banana_moisture
+    - sensor.banana_light_intensity
+    - sensor.banana_conductivity
+    - sensor.banana_temperature
+    - sensor.banana_battery
