@@ -83,11 +83,6 @@
   longitude: -94.819022
   icon: mdi:sofa
 
-- name: Nike Plaza
-  latitude: 39.041254
-  longitude: -94.589668
-  icon: mdi:cart
-
 - name: Nike Outlet
   latitude: 39.125903
   longitude: -94.825692

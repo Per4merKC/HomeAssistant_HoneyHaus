@@ -58,7 +58,7 @@ plant_tab:
   icon: mdi:flower
   view: true
   entities: 
-    - group.philodendron_card
-    - group.ficus_card
-    - group.pineapple_card
-    - group.banana_card
+    - plant.philodendron
+    - plant.ficus
+    - plant.banana
+    - plant.pineapple

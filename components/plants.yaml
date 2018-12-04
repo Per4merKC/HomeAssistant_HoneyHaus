@@ -10,7 +10,7 @@ plant:
   pineapple:
     sensors:
       moisture: sensor.pineapple_moisture
-      brightness: sensor.pinapple_light_intensity
+      brightness: sensor.pineapple_light_intensity
       conductivity: sensor.pineapple_conductivity
       temperature: sensor.pineapple_temperature
       battery: sensor.pineapple_battery

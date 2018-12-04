@@ -33,5 +33,5 @@
 
 # HA Certificate Expiry
 - platform: cert_expiry
-  host: honeyhaus.duckdns.org
+  host: !secret duck_url
 
