@@ -1,0 +1,34 @@
+guest_mode:
+  name: Guest Mode
+  icon: mdi:account-alert
+  initial: off
+
+alert_mode:
+  name: Alert Mode
+  icon: mdi:alert-octagram
+  initial: off
+
+speech_notifications:
+  name: Speech Notifications
+  icon: mdi:speaker-wireless
+  initial: on
+
+text_notifications:
+  name: Text Notifications
+  icon: mdi:cellphone-wireless
+  initial: on
+
+enable_security: 
+  name: Alarm Enabled
+  icon: mdi:shield-outline
+  initial: on
+
+vacation_mode: 
+  name: Vacation Mode
+  icon: mdi:airplane
+  initial: off
+
+status_in_bed: 
+  name: In Bed
+  icon: mdi:hotel
+  initial: off

@@ -20,15 +20,6 @@ homeassistant:
 # discovery:
 #   ignore: google_cast
 
-device_tracker:
-  - platform: nmap_tracker
-    track_new_devices: true
-    hosts: 
-      - 192.168.1.31
-      - 192.168.1.110
-      - 192.168.1.128
-      - 192.168.1.111
-    interval_seconds: 15
 
 light:
   - platform: group
@@ -44,19 +35,6 @@ binary_sensor:
     country: US
     province: KS
 
-input_boolean:
-  enable_security: 
-    name: Alarm Enabled
-    icon: mdi:shield-outline
-    initial: on
-  vacation_mode: 
-    name: Vacation Mode
-    icon: mdi:airplane
-    initial: off
-  status_in_bed: 
-    name: In Bed
-    icon: mdi:hotel
-    initial: off
 
 notify:
   - name: honeyhausha
@@ -66,9 +44,11 @@ notify:
     access_token: !secret twitter_ha_access_token
     access_token_secret: !secret twitter_ha_access_token_secret
 
-automation: !include automations.yaml
 group: !include_dir_merge_named groups
-script: !include scripts.yaml
+device_tracker: !include_dir_merge_list device_tracker
 sensor: !include_dir_merge_list sensors
+automation: !include automations.yaml
 scene: !include_dir_merge_list scenes
+script: !include scripts.yaml
+input_boolean: !include_dir_merge_named input_boolean
 zone: !include zones.yaml

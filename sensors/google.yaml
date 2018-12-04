@@ -10,21 +10,4 @@
   origin: device_tracker.je_iphone
   destination: zone.home
 
-# - platform: google_wifi
-#   name: Google Wifi Mesh
-
-  
-
-# Google Calendar
-# Future
-
-# Google WiFi
-# Future
-
-# Gmail Unread Email
-# - platform: imap
-#   server: imap.gmail.com
-#   port: 993
-#   username: !secret imap_email
-#   password: !secret imap_password
 
