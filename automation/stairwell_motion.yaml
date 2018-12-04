@@ -1,0 +1,10 @@
+- alias: Stairwell Motion Detected
+  hide_entity: true
+  trigger:
+  - entity_id: binary_sensor.stairway_motion_80
+    platform: state
+    from: 'off'
+    to: 'on'
+  action:
+  - alias: Turn on basement stairwell lights
+    service: script.basement_stair_motion_timer

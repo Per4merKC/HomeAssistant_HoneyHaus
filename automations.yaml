@@ -1,173 +1,173 @@
-- id: jwe001
-  alias: Basement Motion Detected
-  hide_entity: true
-  trigger:
-  - entity_id: binary_sensor.eye_motion_142
-    platform: state
-    from: 'off'
-    to: 'on'
-  action:
-  - alias: Turn on basement lights
-    service: script.basement_stair_motion_timer
+# - id: jwe001
+#   alias: Basement Motion Detected
+#   hide_entity: true
+#   trigger:
+#   - entity_id: binary_sensor.eye_motion_142
+#     platform: state
+#     from: 'off'
+#     to: 'on'
+#   action:
+#   - alias: Turn on basement lights
+#     service: script.basement_stair_motion_timer
 
-- id: jwe002
-  alias: Stairwell Motion Detected
-  hide_entity: true
-  trigger:
-  - entity_id: binary_sensor.stairway_motion_80
-    platform: state
-    from: 'off'
-    to: 'on'
-  action:
-  - alias: Turn on basement stairwell lights
-    service: script.basement_stair_motion_timer
+# - id: jwe002
+#   alias: Stairwell Motion Detected
+#   hide_entity: true
+#   trigger:
+#   - entity_id: binary_sensor.stairway_motion_80
+#     platform: state
+#     from: 'off'
+#     to: 'on'
+#   action:
+#   - alias: Turn on basement stairwell lights
+#     service: script.basement_stair_motion_timer
 
-- id: jwe003
-  alias: Front Door - Not Home
-  hide_entity: true
-  trigger:
-  - entity_id: binary_sensor.front_door_135
-    platform: state
-    from: 'off'
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: device_tracker.rb_iphone
-    state: not_home
-  - condition: state
-    entity_id: device_tracker.je_iphone
-    state: not_home
-  action:
-  - alias: Intruder Alert - Front Door
-    data:
-      message: Front door opened when nobody is home
-      title: Front Door
-    service: notify.ios_je_iphone
+# - id: jwe003
+#   alias: Front Door - Not Home
+#   hide_entity: true
+#   trigger:
+#   - entity_id: binary_sensor.front_door_135
+#     platform: state
+#     from: 'off'
+#     to: 'on'
+#   condition:
+#   - condition: state
+#     entity_id: device_tracker.rb_iphone
+#     state: not_home
+#   - condition: state
+#     entity_id: device_tracker.je_iphone
+#     state: not_home
+#   action:
+#   - alias: Intruder Alert - Front Door
+#     data:
+#       message: Front door opened when nobody is home
+#       title: Front Door
+#     service: notify.ios_je_iphone
 
-- id: jwe004
-  alias: HVAC on and Door Open Long
-  hide_entity: true
-  trigger:
-    - entity_id: binary_sensor.front_door_135
-      platform: state
-      from: 'off'
-      to: 'on'
-      for: 
-        minutes: 10
-  condition:
-    condition: or
-    conditions: 
-      - condition: and
-        conditions:
-        - condition: state
-          entity_id: climate.thermostat_4
-          state: Heat
-        - condition: template
-          value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
-      - condition: and
-        conditions:
-        - condition: state
-          entity_id: climate.thermostat_4
-          state: Cool
-        - condition: template
-          value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
-  action:
-  - alias: HVAC Front Door
-    data:
-      message: Front door open and HVAC is running
-      title: HVAC Alert
-    service: notify.ios_je_iphone
+# - id: jwe004
+#   alias: HVAC on and Door Open Long
+#   hide_entity: true
+#   trigger:
+#     - entity_id: binary_sensor.front_door_135
+#       platform: state
+#       from: 'off'
+#       to: 'on'
+#       for: 
+#         minutes: 10
+#   condition:
+#     condition: or
+#     conditions: 
+#       - condition: and
+#         conditions:
+#         - condition: state
+#           entity_id: climate.thermostat_4
+#           state: Heat
+#         - condition: template
+#           value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
+#       - condition: and
+#         conditions:
+#         - condition: state
+#           entity_id: climate.thermostat_4
+#           state: Cool
+#         - condition: template
+#           value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
+#   action:
+#   - alias: HVAC Front Door
+#     data:
+#       message: Front door open and HVAC is running
+#       title: HVAC Alert
+#     service: notify.ios_je_iphone
 
-- id: jwe005
-  alias: Pwned Status Change
-  hide_entity: true
-  initial_state: 'on'
-  trigger: 
-    - platform: numeric_state
-      entity_id: !secret sensor_email_1
-      above: 6
-    - platform: numeric_state
-      entity_id: !secret sensor_email_2
-      above: 1
-    - platform: numeric_state
-      entity_id: !secret sensor_email_3
-      above: 1
-  action: 
-    service: notify.ios_je_iphone
-    data_template:
-      message: 'Warning - HaveIbeenPwned detected {{trigger.to_state.attributes.friendly_name}}'
-      title: Pwned!
+# - id: jwe005
+#   alias: Pwned Status Change
+#   hide_entity: true
+#   initial_state: 'on'
+#   trigger: 
+#     - platform: numeric_state
+#       entity_id: !secret sensor_email_1
+#       above: 6
+#     - platform: numeric_state
+#       entity_id: !secret sensor_email_2
+#       above: 1
+#     - platform: numeric_state
+#       entity_id: !secret sensor_email_3
+#       above: 1
+#   action: 
+#     service: notify.ios_je_iphone
+#     data_template:
+#       message: 'Warning - HaveIbeenPwned detected {{trigger.to_state.attributes.friendly_name}}'
+#       title: Pwned!
   
-- id: jwe006
-  alias: Back Door - Not Home
-  hide_entity: true
-  trigger:
-  - entity_id: binary_sensor.back_door_134
-    platform: state
-    from: 'off'
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: device_tracker.rb_iphone
-    state: not_home
-  - condition: state
-    entity_id: device_tracker.je_iphone
-    state: not_home
-  action:
-  - alias: Intruder Alert - Back Door
-    data:
-      message: Back door opened when nobody is home
-      title: Back Door
-    service: notify.ios_je_iphone
+# - id: jwe006
+#   alias: Back Door - Not Home
+#   hide_entity: true
+#   trigger:
+#   - entity_id: binary_sensor.back_door_134
+#     platform: state
+#     from: 'off'
+#     to: 'on'
+#   condition:
+#   - condition: state
+#     entity_id: device_tracker.rb_iphone
+#     state: not_home
+#   - condition: state
+#     entity_id: device_tracker.je_iphone
+#     state: not_home
+#   action:
+#   - alias: Intruder Alert - Back Door
+#     data:
+#       message: Back door opened when nobody is home
+#       title: Back Door
+#     service: notify.ios_je_iphone
 
-- id: jwe007
-  alias: HVAC on and Door Open Long
-  hide_entity: true
-  trigger:
-    - entity_id: binary_sensor.back_door_134
-      platform: state
-      from: 'off'
-      to: 'on'
-      for: 
-        minutes: 10
-  condition:
-    condition: or
-    conditions: 
-      - condition: and
-        conditions:
-        - condition: state
-          entity_id: climate.thermostat_4
-          state: Heat
-        - condition: template
-          value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
-      - condition: and
-        conditions:
-        - condition: state
-          entity_id: climate.thermostat_4
-          state: Cool
-        - condition: template
-          value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
-  action:
-  - alias: HVAC Front Door
-    data:
-      message: Back door open and HVAC is running
-      title: HVAC Alert
-    service: notify.ios_je_iphone
+# - id: jwe007
+#   alias: HVAC on and Door Open Long
+#   hide_entity: true
+#   trigger:
+#     - entity_id: binary_sensor.back_door_134
+#       platform: state
+#       from: 'off'
+#       to: 'on'
+#       for: 
+#         minutes: 10
+#   condition:
+#     condition: or
+#     conditions: 
+#       - condition: and
+#         conditions:
+#         - condition: state
+#           entity_id: climate.thermostat_4
+#           state: Heat
+#         - condition: template
+#           value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
+#       - condition: and
+#         conditions:
+#         - condition: state
+#           entity_id: climate.thermostat_4
+#           state: Cool
+#         - condition: template
+#           value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
+#   action:
+#   - alias: HVAC Front Door
+#     data:
+#       message: Back door open and HVAC is running
+#       title: HVAC Alert
+#     service: notify.ios_je_iphone
 
-- id: jwe008
-  alias: Doorbell Pressed
-  hide_entity: true
-  trigger:
-  - platform: mqtt
-    topic: doorbell
-    payload: 'Ding'
-  action:
-    service: notify.ios_je_iphone
-    data:
-      title: Doorbell
-      message: Someone pressed the front doorbell
-      data: 
-        attachment: 
-          url: !secret ip_camera_image_url
-          content-type: jpeg
-          hide-thumbnail: false
+# - id: jwe008
+#   alias: Doorbell Pressed
+#   hide_entity: true
+#   trigger:
+#   - platform: mqtt
+#     topic: doorbell
+#     payload: 'Ding'
+#   action:
+#     service: notify.ios_je_iphone
+#     data:
+#       title: Doorbell
+#       message: Someone pressed the front doorbell
+#       data: 
+#         attachment: 
+#           url: !secret ip_camera_image_url
+#           content-type: jpeg
+#           hide-thumbnail: false

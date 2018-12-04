@@ -1,0 +1,10 @@
+- alias: Basement Motion Detected
+  hide_entity: true
+  trigger:
+  - entity_id: binary_sensor.eye_motion_142
+    platform: state
+    from: 'off'
+    to: 'on'
+  action:
+  - alias: Turn on basement lights
+    service: script.basement_stair_motion_timer

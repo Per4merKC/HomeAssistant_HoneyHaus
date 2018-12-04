@@ -47,7 +47,7 @@ notify:
 group: !include_dir_merge_named groups
 device_tracker: !include_dir_merge_list device_tracker
 sensor: !include_dir_merge_list sensors
-automation: !include automations.yaml
+automation: !include_dir_merge_list automation
 scene: !include_dir_merge_list scenes
 script: !include scripts.yaml
 input_boolean: !include_dir_merge_named input_boolean
