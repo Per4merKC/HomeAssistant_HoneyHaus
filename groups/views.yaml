@@ -30,17 +30,15 @@ information_tab:
   entities:
     - group.iphone_info_card
     - group.pi_card
+    - group.printer_card
     - group.energy_card
     - group.finance_card
-    - group.google_wifi_card
     - group.crypto_curr_card
     - group.travel_time_card
     - group.speed_test_card
-    - group.crimes_card
     - device_tracker.je_iphone
     - device_tracker.rb_iphone
     - binary_sensor.floorplan
-#    - group.email_breach_card
 
 weather_tab: 
   name: Weather
