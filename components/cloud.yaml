@@ -4,3 +4,33 @@
 # https://www.home-assistant.io/components/cloud/
 #
 cloud:
+  alexa: 
+    filter: 
+      exclude_domains:
+        - alert
+        - automation
+        - cover
+        # - fan
+        - group
+        - input_boolean
+        - light
+        - lock
+        - media_player
+        - scene
+        - script
+        - sensor
+        - switch
+      include_entities:
+        - group.can_lights_group
+        - light.tree_light_22
+        - light.outside_lights_147
+        - light.bathroom_lights
+        - light.desk_lights
+        - light.chandelier_10
+        - light.washing_light_97
+        - light.stairwell_light_78
+        - light.guest_room_light_27
+    entity_config:
+      group.can_lights_group:
+        display_categories: LIGHT
+      
