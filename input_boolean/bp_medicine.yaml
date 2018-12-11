@@ -1,0 +1,4 @@
+bp_medicine:
+  name: BP Medicine Reminder
+  initial: off
+  icon: mdi:pill

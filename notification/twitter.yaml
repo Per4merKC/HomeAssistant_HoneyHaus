@@ -1,0 +1,6 @@
+- name: honeyhausha
+  platform: twitter
+  consumer_key: !secret twitter_ha_consumer_key
+  consumer_secret: !secret twitter_ha_consumer_secret
+  access_token: !secret twitter_ha_access_token
+  access_token_secret: !secret twitter_ha_access_token_secret

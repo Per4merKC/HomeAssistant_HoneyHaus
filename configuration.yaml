@@ -14,7 +14,7 @@ homeassistant:
   packages: !include_dir_named components
 
   # customize individual entries
-  customize: !include customize.yaml
+  customize: !include_dir_merge_named customizations
 
 # # Discover some devices automatically
 # discovery:
@@ -35,20 +35,13 @@ binary_sensor:
     country: US
     province: KS
 
-
-notify:
-  - name: honeyhausha
-    platform: twitter
-    consumer_key: !secret twitter_ha_consumer_key
-    consumer_secret: !secret twitter_ha_consumer_secret
-    access_token: !secret twitter_ha_access_token
-    access_token_secret: !secret twitter_ha_access_token_secret
-
-group: !include_dir_merge_named groups
 device_tracker: !include_dir_merge_list device_tracker
 sensor: !include_dir_merge_list sensors
-automation: !include_dir_merge_list automation
+input_boolean: !include_dir_merge_named input_boolean
+input_number: !include_dir_merge_named input_number
 scene: !include_dir_merge_list scenes
 script: !include scripts.yaml
-input_boolean: !include_dir_merge_named input_boolean
+automation: !include_dir_merge_list automation
 zone: !include zones.yaml
+notify: !include_dir_merge_list notification
+group: !include_dir_merge_named groups

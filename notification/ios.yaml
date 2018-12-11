@@ -1,0 +1,4 @@
+  - name: ios_family
+    platform: group
+    services:
+      - service: ios_je_iphone
