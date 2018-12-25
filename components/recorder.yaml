@@ -19,5 +19,4 @@ recorder:
       - sensor.uptime
       - sensor.network_in_eth0
       - sensor.network_out_eth0
-      - sensor.since_last_boot
       - zone.home

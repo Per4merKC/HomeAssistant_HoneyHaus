@@ -21,4 +21,3 @@ history:
       - remote.apple_tv
       - sensor.moon
       - sensor.ssl_certificate_expiry
-      - sensor.since_last_boot

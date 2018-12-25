@@ -2,7 +2,6 @@ pi_card:
   name: Raspberry Pi
   entities: 
     - sensor.last_boot
-    - sensor.since_last_boot
     - sensor.current_version
     - sensor.ssl_certificate_expiry
     - sensor.processor_use
