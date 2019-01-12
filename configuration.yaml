@@ -38,7 +38,6 @@ binary_sensor:
 device_tracker: !include_dir_merge_list device_tracker
 sensor: !include_dir_merge_list sensors
 input_boolean: !include_dir_merge_named input_boolean
-input_number: !include_dir_merge_named input_number
 scene: !include_dir_merge_list scenes
 script: !include scripts.yaml
 automation: !include_dir_merge_list automation

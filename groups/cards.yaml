@@ -89,11 +89,6 @@ alarm_card:
 #   entities: 
 #     - sensor.crimes
 
-# email_breach_card:
-#   name: Pwned
-#   entities: 
-#     - !secret sensor_email_1
-#     - !secret sensor_email_2
-#     - !secret sensor_email_3
+
 
 

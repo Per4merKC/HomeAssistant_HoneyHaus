@@ -4,6 +4,8 @@ livingroom_tab:
   icon: mdi:sofa
   view: true
   entities:
+    - group.living_room_card
+    - group.dining_room_card
     - media_player.living_room_dot
     - remote.apple_tv
     - media_player.living_room
@@ -28,17 +30,18 @@ information_tab:
   icon: mdi:information
   view: true
   entities:
+    - device_tracker.je_iphone
+    - device_tracker.rb_iphone
     - group.iphone_info_card
     - group.pi_card
     - group.printer_card
-    - group.energy_card
-    - group.finance_card
-    - group.crypto_curr_card
     - group.travel_time_card
+    - group.finance_card
+    - group.twitch_card
+    - group.pwned_card
+    - group.energy_card
+    - group.crypto_curr_card
     - group.speed_test_card
-    - device_tracker.je_iphone
-    - device_tracker.rb_iphone
-    - binary_sensor.floorplan
 
 weather_tab: 
   name: Weather

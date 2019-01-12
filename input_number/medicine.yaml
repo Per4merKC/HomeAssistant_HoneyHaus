@@ -1,9 +1,0 @@
-# used for one-time medicine/illness
-antibiotic:
-  name: Antibiotic
-  icon: mdi:medical-bag
-  initial: 0
-  min: 0
-  max: 4
-  step: 1
-  mode: box
