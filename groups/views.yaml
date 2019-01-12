@@ -48,11 +48,13 @@ weather_tab:
   icon: mdi:weather-partlycloudy
   view: true
   entities: 
+    - sun.sun
+    - sensor.moon
+    - sensor.season
     - weather.dark_sky
     - group.weather_card
     - group.airvisual_card
     - group.pollen_card
-    - sensor.season
 
 plant_tab: 
   name: Plants

@@ -9,7 +9,6 @@ pi_card:
     - sensor.memory_use
     - sensor.memory_free
     - sensor.disk_use_percent
-    - sensor.disk_use_
     - sensor.disk_free
     - sensor.network_in_eth0
     - sensor.network_out_eth0

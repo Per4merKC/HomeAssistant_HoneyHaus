@@ -6,8 +6,15 @@
       actionName: BP_TABLET_TAKEN
   action:
     - service: notify.ios_je_iphone
-      data:
-        message: "Great job!"
+      data_template:
+        message: >
+          {{
+            [
+              "Good Job!", 
+              "Your ❤️ thanks you!", 
+              "Way to go!"
+            ] | random 
+          }}
     - service: input_boolean.turn_on
       entity_id: input_boolean.bp_medicine
 

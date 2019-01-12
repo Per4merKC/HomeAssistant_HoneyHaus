@@ -4,7 +4,7 @@ finance_card:
     - sensor.sprint
     - sensor.apple
     - sensor.google
-    - sensor.vanguard_mega_cap_etf
-    - sensor.schwab_us_dividends_equity_etf
-    - sensor.spdr_sp_retail_etf
-    - sensor.workplace_equality_portfolio
+#     - sensor.vanguard_mega_cap_etf
+#     - sensor.schwab_us_dividends_equity_etf
+#     - sensor.spdr_sp_retail_etf
+#     - sensor.workplace_equality_portfolio
