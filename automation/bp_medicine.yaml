@@ -1,4 +1,5 @@
 - alias: BP Med Taken
+  hide_entity: true
   trigger:
     platform: event
     event_type: ios.notification_action_fired
@@ -19,6 +20,7 @@
       entity_id: input_boolean.bp_medicine
 
 - alias: BP Remind Me Later
+  hide_entity: true
   trigger:
     platform: event
     event_type: ios.notification_action_fired
@@ -30,6 +32,7 @@
         message: "Ok. I will remind you later..."
 
 - alias: BP Medicine Reminder
+  hide_entity: true
   initial_state: true
   trigger:
     - platform: time
@@ -56,6 +59,7 @@
           #   my_custom_dat: foo_bar
 
 - alias: BP Medicine Reset
+  hide_entity: true
   trigger: 
     - platform: time
       at: '01:00:00'

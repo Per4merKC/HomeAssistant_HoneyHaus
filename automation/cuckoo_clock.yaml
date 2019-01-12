@@ -4,6 +4,7 @@
 ###################################
 
 - alias: Cuckoo Clock
+  hide_entity: true
   trigger:
     - platform: time
       minutes: 00

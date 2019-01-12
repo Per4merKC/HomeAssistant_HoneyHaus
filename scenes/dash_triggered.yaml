@@ -4,4 +4,7 @@
 
 - name: goodmorning
   entities: 
-    light.over_sink_light_53: on
+    light.bathroom_lights: 
+        state: true
+        brightness: 254
+        color_temp: 250
