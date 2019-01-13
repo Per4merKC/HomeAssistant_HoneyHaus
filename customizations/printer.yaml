@@ -1,8 +1,11 @@
 sensor.printer_cyan:
   icon: mdi:printer
+
 sensor.printer_yellow:
   icon: mdi:printer
+
 sensor.printer_magenta:
   icon: mdi:printer
+
 sensor.printer_black:
   icon: mdi:printer
