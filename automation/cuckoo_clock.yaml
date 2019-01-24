@@ -6,10 +6,10 @@
 - alias: Cuckoo Clock
   hide_entity: true
   trigger:
-    - platform: time
+    - platform: time_pattern
       minutes: 00
       seconds: 01
-    - platform: time
+    - platform: time_pattern
       minutes: 30
       seconds: 00
 

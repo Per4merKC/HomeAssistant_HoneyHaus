@@ -7,4 +7,4 @@ pollen_card:
     - sensor.allergy_index_yesterday_2
     - sensor.allergy_index_today_2
     - sensor.allergy_index_tomorrow_2
-    - sensor.cold__flu_forecasted_average_3
+    - sensor.cold_flu_forecasted_average_3
