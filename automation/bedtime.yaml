@@ -1,4 +1,5 @@
-- alias: Withings Bedtime  
+- alias: Withings Bedtime
+  hide_entity: true
   trigger:
     platform: event
     event_type: ifttt_webhook_received

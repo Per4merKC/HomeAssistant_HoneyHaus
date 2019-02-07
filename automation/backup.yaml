@@ -1,5 +1,6 @@
 # Backup at 2AM
 - alias: Backup Local
+  hide_entity: true
   trigger:
   - platform: time
     at: '02:00:00'
@@ -10,6 +11,7 @@
 
 # Back to Dropbox 
 - alias: Backup Dropbox
+  hide_entity: true
   trigger:
   - platform: time
     at: '03:00:00'
