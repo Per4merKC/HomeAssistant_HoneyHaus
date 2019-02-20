@@ -1,8 +1,5 @@
 - platform: nmap_tracker
   track_new_devices: true
   hosts: 
-    - 192.168.1.31
-    - 192.168.1.110
-    - 192.168.1.128
-    - 192.168.1.111
+    - 192.168.1.0/24
   interval_seconds: 15
