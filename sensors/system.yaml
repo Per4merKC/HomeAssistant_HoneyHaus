@@ -16,16 +16,16 @@
       arg: eth0
 
 # Network Speed Test
-- platform: speedtest
-  hour:
-    - 8
-    - 12
-    - 16
-    - 20
-  monitored_conditions:
-    - ping
-    - download
-    - upload
+# - platform: speedtest
+#   hour:
+#     - 8
+#     - 12
+#     - 16
+#     - 20
+#   monitored_conditions:
+#     - ping
+#     - download
+#     - upload
 
 # HA Version
 # The version sensor platform is displaying the

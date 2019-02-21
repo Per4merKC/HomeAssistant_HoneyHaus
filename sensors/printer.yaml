@@ -6,26 +6,26 @@
   command: curl http://192.168.1.55/etc/view_config.html | awk '/\&#x25a0;|\&#x25a1;/{i++} i == 1 {print; exit}' | awk -F'\&#x25a0;' 'NF{print NF-1}' | awk '{print $0f}'
   name: Printer Cyan
   value_template: '{{ value | multiply(10)}}%'
-  unit_of_measure: '%'
   scan_interval: 14400
+  # unit_of_measure: '%'
 
 - platform: command_line
   command: curl http://192.168.1.55/etc/view_config.html | awk '/\&#x25a0;|\&#x25a1;/{i++} i == 2 {print; exit}' | awk -F'\&#x25a0;' 'NF{print NF-1}' | awk '{print $0f}'
   name: Printer Magenta
   value_template: '{{ value | multiply(10)}}%'
-  unit_of_measure: '%'
   scan_interval: 14400
+  # unit_of_measure: '%'
 
 - platform: command_line
   command: curl http://192.168.1.55/etc/view_config.html | awk '/\&#x25a0;|\&#x25a1;/{i++} i == 3 {print; exit}' | awk -F'\&#x25a0;' 'NF{print NF-1}' | awk '{print $0f}'
   name: Printer Yellow
   value_template: '{{ value | multiply(10)}}%'
-  unit_of_measure: '%'
   scan_interval: 14400
+  # unit_of_measure: '%'
 
 - platform: command_line
   command: curl http://192.168.1.55/etc/view_config.html | awk '/\&#x25a0;|\&#x25a1;/{i++} i == 4 {print; exit}' | awk -F'\&#x25a0;' 'NF{print NF-1}' | awk '{print $0f}'
   name: Printer Black
   value_template: '{{ value | multiply(10)}}%'
-  unit_of_measure: '%'
   scan_interval: 14400
+  # unit_of_measure: '%'
