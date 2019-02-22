@@ -2,4 +2,4 @@
   track_new_devices: true
   hosts: 
     - 192.168.1.0/24
-  interval_seconds: 15
+  interval_seconds: 60

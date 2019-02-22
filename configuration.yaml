@@ -44,3 +44,4 @@ automation: !include_dir_merge_list automation
 zone: !include zones.yaml
 notify: !include_dir_merge_list notification
 group: !include_dir_merge_named groups
+person: !include_dir_merge_named people
