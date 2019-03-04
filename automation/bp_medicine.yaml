@@ -13,6 +13,8 @@
             [
               "Good Job!", 
               "Your ❤️ thanks you!", 
+              "👊 Fist bump, bro!",
+              "Thanks for taking care of your blood pressure 🧛🏻‍♂️",
               "Way to go!"
             ] | random 
           }}

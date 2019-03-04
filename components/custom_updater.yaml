@@ -1,5 +1,5 @@
 custom_updater:
-  mode: storage
+  # mode: storage
   hide_sensor: true
   track:
     - cards
