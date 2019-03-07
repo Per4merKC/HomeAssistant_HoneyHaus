@@ -1,4 +1,5 @@
-pollen_card: 
+---
+pollen_card:
   name: Pollen
   icon: mdi:flower
   entities:

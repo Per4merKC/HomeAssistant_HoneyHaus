@@ -1,6 +1,7 @@
+---
 # Raspberry Pi Information
 - platform: systemmonitor
-  resources: 
+  resources:
     - type: disk_use_percent
       arg: /
     - type: disk_free
@@ -39,4 +40,3 @@
 # HA Certificate Expiry
 - platform: cert_expiry
   host: !secret duck_url
-

@@ -1,6 +1,7 @@
+---
 printer_card:
   name: Printer
-  entities: 
+  entities:
     - sensor.printer_cyan
     - sensor.printer_yellow
     - sensor.printer_magenta

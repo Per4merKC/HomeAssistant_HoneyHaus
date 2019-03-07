@@ -1,5 +1,6 @@
+---
 - name: Person - John
   id: per4merkc
-  user_id: a3f2e41984854f44823af26245d0b89f
+  user_id: !secret ha_user_id_john
   device_trackers:
     - device_tracker.je_iphone

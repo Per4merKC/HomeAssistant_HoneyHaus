@@ -1,3 +1,4 @@
+---
 # Views are the tabs across the top of the web interface.
 livingroom_tab:
   name: Living Room
@@ -43,11 +44,11 @@ information_tab:
     - group.crypto_curr_card
     - group.speed_test_card
 
-weather_tab: 
+weather_tab:
   name: Weather
   icon: mdi:weather-partlycloudy
   view: true
-  entities: 
+  entities:
     - sun.sun
     - sensor.moon
     - sensor.season
@@ -56,11 +57,11 @@ weather_tab:
     - group.airvisual_card
     - group.pollen_card
 
-plant_tab: 
+plant_tab:
   name: Plants
   icon: mdi:flower
   view: true
-  entities: 
+  entities:
     - plant.philodendron
     - plant.ficus
     - plant.banana

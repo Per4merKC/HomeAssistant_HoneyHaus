@@ -1,3 +1,4 @@
+---
 - platform: mqtt
   name: "Doorbell"
   state_topic: "doorbell"

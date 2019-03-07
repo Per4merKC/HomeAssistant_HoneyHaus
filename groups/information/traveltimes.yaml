@@ -1,5 +1,6 @@
+---
 travel_time_card:
   name: Travel Times
-  entities: 
+  entities:
     - sensor.home_to_sprint
     - sensor.john_to_home

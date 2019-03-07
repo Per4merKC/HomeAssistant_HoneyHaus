@@ -1,7 +1,8 @@
+---
 twitch_card:
   name: Twitch
   icon: mdi:twitch
-  entities: 
+  entities:
     - sensor.drzzs
     - sensor.frenck
     - sensor.adonnolux

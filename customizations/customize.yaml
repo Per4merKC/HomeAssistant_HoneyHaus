@@ -1,3 +1,4 @@
+---
 # sensors
 switch.washer_fan_38:
   icon: mdi:fan
@@ -17,7 +18,7 @@ sensor.schwab_us_dividends_equity_etf:
 sensor.vanguard_mega_cap_etf:
   icon: mdi:finance
 
-sensor.workplace_equality_portfolio: 
+sensor.workplace_equality_portfolio:
   icon: mdi:finance
 
 sensor.spdr_sp_retail_etf:
@@ -39,7 +40,7 @@ sensor.3_in_1_sensor_temperature_143:
   friendly_name: Basement Temperature
   device_class: temperature
 
-sensor.3_in_1_sensor_light_144: 
+sensor.3_in_1_sensor_light_144:
   friendly_name: Basment Lux
   device_class: illuminance
 
@@ -47,7 +48,7 @@ sensor.home_to_sprint:
   hidden: false
   icon: mdi:office-building
 
-sensor.john_to_home: 
+sensor.john_to_home:
   hidden: false
   icon: mdi:home-map-marker
 
@@ -95,12 +96,12 @@ binary_sensor.flood_sensor_64:
 binary_sensor.tilt_124:
   friendly_name: Garage Door
   device_class: garage_door
-  
+
 binary_sensor.back_door_134:
-  device_class: door 
+  device_class: door
 
 binary_sensor.front_door_135:
-  device_class: door 
+  device_class: door
 
 binary_sensor.workday_sensor:
   hidden: true
@@ -143,7 +144,7 @@ light.bathroom_bulb_3:
 light.bathroom_bulb_4:
   hidden: true
 
-light.outside_lights_147: 
+light.outside_lights_147:
   icon: mdi:lighthouse
 
 # media players
@@ -156,9 +157,9 @@ media_player.johns_alexa_apps:
 # scripts
 script.basement_stair_motion_helper:
   hidden: true
-  
+
 script.basement_stair_motion_timer:
   hidden: true
-  
-script.dash_button_01_pressed: 
+
+script.dash_button_01_pressed:
   hidden: true

@@ -1,3 +1,4 @@
+---
 plant.ficus:
   friendly_name: Ficus
 sensor.ficus_moisture:

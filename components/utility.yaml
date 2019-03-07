@@ -1,7 +1,8 @@
+---
 utility_meter:
-  monthly_energy: 
+  monthly_energy:
     source: sensor.home_energy_monitor_98
     cycle: monthly
-  daily_energy: 
+  daily_energy:
     source: sensor.home_energy_monitor_98
     cycle: daily

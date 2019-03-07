@@ -1,3 +1,4 @@
+---
 - platform: bitcoin
   display_options:
     - exchangerate

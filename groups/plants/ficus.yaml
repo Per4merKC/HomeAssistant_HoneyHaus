@@ -1,6 +1,7 @@
+---
 # ficus_card:
 #   name: Ficus Tree
-#   entities: 
+#   entities:
 #     - sensor.ficus_moisture
 #     - sensor.ficus_light_intensity
 #     - sensor.ficus_conductivity

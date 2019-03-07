@@ -1,6 +1,7 @@
+---
 # philodendron_card:
 #   name: Philodendron
-#   entities: 
+#   entities:
 #     - sensor.philodendron_moisture
 #     - sensor.philodendron_light_intensity
 #     - sensor.philodendron_conductivity

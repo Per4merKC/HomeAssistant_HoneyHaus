@@ -1,5 +1,6 @@
+---
 crypto_curr_card:
   name: Crypto Currency
-  entities:     
+  entities:
     - sensor.exchange_rate_1_btc
     - sensor.trade_volume

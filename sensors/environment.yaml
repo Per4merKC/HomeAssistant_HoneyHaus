@@ -1,13 +1,14 @@
+---
 # Weather
 - platform: yr
   name: Weather
-  monitored_conditions: 
+  monitored_conditions:
     - temperature
     - symbol
-    
+
 # Have I Been Pwned
 - platform: haveibeenpwned
-  email: 
+  email:
     - !secret pwned_email_1
     - !secret pwned_email_2
     - !secret pwned_email_3
@@ -15,10 +16,9 @@
 # Air Visual
 - platform: airvisual
   api_key: !secret airvisual_key
-  monitored_conditions: 
+  monitored_conditions:
     - us
   show_on_map: false
- 
 
 # Moon Information
 - platform: moon
@@ -60,7 +60,12 @@
 #           mdi:weather-fog
 #         {% elif is_state('sensor.dark_sky_icon', 'cloudy') %}
 #           mdi:weather-cloudy
-#         {% elif is_state('sensor.dark_sky_icon', 'partly-cloudy-day') or is_state('sensor.dark_sky_icon', 'partly-cloudy-night') %}
+#         {%
+#           elif
+#           is_state('sensor.dark_sky_icon', 'partly-cloudy-day')
+#           or
+#           is_state('sensor.dark_sky_icon', 'partly-cloudy-night')
+#         %}
 #           mdi:weather-partlycloudy
 #         {% elif is_state('sensor.dark_sky_icon', 'hail') %}
 #           mdi:weather-hail
@@ -85,4 +90,3 @@
     - allergy_index_tomorrow
     - allergy_index_yesterday
     - disease_average_forecasted
-

@@ -1,16 +1,17 @@
+---
 - alias: Doorbell Pressed
   hide_entity: true
   trigger:
-  - platform: mqtt
-    topic: doorbell
-    payload: 'Ding'
+    - platform: mqtt
+      topic: doorbell
+      payload: "Ding"
   action:
     service: notify.ios_je_iphone
     data:
       title: Doorbell
       message: Someone pressed the front doorbell
-      data: 
-        attachment: 
+      data:
+        attachment:
           url: !secret ip_camera_image_url
           content-type: jpeg
           hide-thumbnail: false

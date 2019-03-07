@@ -1,3 +1,4 @@
+---
 # GROUPS (cards)
 living_room_card:
   name: Living Room
@@ -60,7 +61,7 @@ guest_room_card:
 computer_room_card:
   name: Computer Room
   view: false
-  entities: 
+  entities:
     - light.desk_lights
     - sensor.desk_dimmer
 
@@ -73,10 +74,9 @@ alarm_card:
     - switch.front_door_135
     - switch.back_door_134
     - switch.tilt_124
-
 # google_wifi_card:
 #   name: Google Wifi Status
-#   entities: 
+#   entities:
 #     - sensor.google_wifi_mesh_current_version
 #     - sensor.google_wifi_mesh_last_restart
 #     - sensor.google_wifi_mesh_local_ip
@@ -86,9 +86,6 @@ alarm_card:
 
 # crimes_card:
 #   name: Crimes
-#   entities: 
+#   entities:
 #     - sensor.crimes
-
-
-
 

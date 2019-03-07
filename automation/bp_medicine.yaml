@@ -1,3 +1,4 @@
+---
 - alias: BP Med Taken
   hide_entity: true
   trigger:
@@ -56,9 +57,9 @@
         data:
           push:
             category: "bp_med"
-          # action_data:
-          #   entity_id: light.test
-          #   my_custom_dat: foo_bar
+            # action_data:
+            #   entity_id: light.test
+            #   my_custom_dat: foo_bar
 
 - alias: BP Medicine Reset
   hide_entity: true

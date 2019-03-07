@@ -1,3 +1,4 @@
+---
 - name: honeyhausha
   platform: twitter
   consumer_key: !secret twitter_ha_consumer_key

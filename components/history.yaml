@@ -1,11 +1,12 @@
+---
 # The history component will track everything that is going on within
 # Home Assistant and allows the user to browse through it.
 #
 # https://www.home-assistant.io/components/history/
 #
 history:
-  exclude: 
-    domains: 
+  exclude:
+    domains:
       - automation
       - updater
       - media_player
@@ -16,7 +17,7 @@ history:
       - script
       - sun
       - moon
-    entities: 
+    entities:
       - device_tracker.withings_scale
       - remote.apple_tv
       - sensor.moon
