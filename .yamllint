@@ -50,7 +50,7 @@ rules:
     level: error
   line-length:
     ignore: |
-      .github/support.yml
+      sensors/printer.yaml
     level: warning
     max: 120
     allow-non-breakable-words: true

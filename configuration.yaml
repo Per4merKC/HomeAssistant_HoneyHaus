@@ -8,7 +8,6 @@ homeassistant:
   time_zone: America/Chicago
   auth_providers:
     - type: homeassistant
-    - type: legacy_api_password
     - type: trusted_networks
 
   # load packages (split-configuration format)
