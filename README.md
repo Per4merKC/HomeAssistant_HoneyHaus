@@ -1,5 +1,9 @@
 # HoneyHaus
 
+[![GitLab CI][gitlabci-shield]][gitlabci]
+[![GitHub Activity][commits-shield]][commits]
+[![GitHub Last Commit][last-commit-shield]][commits]
+
 This is my configuration... I'm new to Home-Assistant, but have roots back
 in the [Mister House](http://misterhouse.net) days. :-)
 
@@ -16,7 +20,6 @@ integrating them with modern technology and convienence.
     - Dining Room Chandelier
     - Kitchen Lights
     - Guest Bedroom Light
-    - Toaster \*(wall plug is not utilized in any automations)
 
   - Z-Wave
 
@@ -28,5 +31,14 @@ integrating them with modern technology and convienence.
 
 - IKEA Trådfri
   - Bathroom Sink Light
+  - Desk Lights
 - Honeywell WiFi Thermostat
 - Amazon Echo Dot
+- Amazon Echo Spot
+- Android Camera (Phone)
+
+[gitlabci-shield]: https://gitlab.com/per4merkc/homeassistant_honeyhaus/badges/master/pipeline.svg
+[gitlabci]: https://gitlab.com/per4merkc/homeassistant_honeyhaus/pipelines
+[commits-shield]: https://img.shields.io/github/commit-activity/y/per4merkc/homeassistant_honeyhaus.svg
+[commits]: https://github.com/per4merkc/homeassistant_honeyhaus/commits/master
+[last-commit-shield]: https://img.shields.io/github/last-commit/per4merkc/homeassistant_honeyhaus.svg
