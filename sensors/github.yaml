@@ -1,0 +1,12 @@
+---
+- platform: github
+  access_token: !secret github_access_token
+  repositories:
+    - path: "home-assistant/home-assistant"
+      name: "HA Official"
+    - path: "per4merkc/homeassistant_honeyhaus"
+      name: "My HA"
+    - path: "frenck/home-assistant-config"
+      name: "Frenck HA"
+    - path: "ccostan/Home-AssistantConfig"
+      name: "BearStone HA"
