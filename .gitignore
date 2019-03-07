@@ -36,9 +36,11 @@ __pycache__/
 .DS_Store
 
 # Specific Keep
+!/.stubs
 !/.stubs/secrets.yaml
 !/.gitignore
 !/.travis.yml
+
 
 # C extensions
 *.so
