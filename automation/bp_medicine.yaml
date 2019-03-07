@@ -13,8 +13,8 @@
             [
               "Good Job!", 
               "Your ❤️ thanks you!", 
-              "👊 Fist bump, bro!",
-              "Thanks for taking care of your blood pressure 🧛🏻‍♂️",
+              "Fist bump, bro!",
+              "Thanks for taking care of your blood pressure!",
               "Way to go!"
             ] | random 
           }}
@@ -38,16 +38,16 @@
   initial_state: true
   trigger:
     - platform: time_pattern
-      minutes: '/15'
-      seconds: '00'
+      minutes: "/15"
+      seconds: "00"
   condition:
     - condition: and
-      conditions: 
+      conditions:
         - condition: state
           entity_id: input_boolean.bp_medicine
-          state: 'off'
+          state: "off"
         - condition: time
-          after: '06:30:00'
+          after: "06:30:00"
   action:
     - service: notify.ios_je_iphone
       data:
@@ -56,16 +56,15 @@
         data:
           push:
             category: "bp_med"
-          # action_data: 
+          # action_data:
           #   entity_id: light.test
           #   my_custom_dat: foo_bar
 
 - alias: BP Medicine Reset
   hide_entity: true
-  trigger: 
+  trigger:
     - platform: time
-      at: '01:00:00'
-  action: 
+      at: "01:00:00"
+  action:
     - service: input_boolean.turn_off
       entity_id: input_boolean.bp_medicine
-      

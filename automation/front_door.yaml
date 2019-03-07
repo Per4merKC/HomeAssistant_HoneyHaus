@@ -1,53 +1,54 @@
+---
 - alias: Front Door - Not Home
   hide_entity: true
   trigger:
-  - entity_id: binary_sensor.front_door_135
-    platform: state
-    from: 'off'
-    to: 'on'
+    - entity_id: binary_sensor.front_door_135
+      platform: state
+      from: "off"
+      to: "on"
   condition:
-  - condition: state
-    entity_id: device_tracker.rb_iphone
-    state: not_home
-  - condition: state
-    entity_id: device_tracker.je_iphone
-    state: not_home
+    - condition: state
+      entity_id: device_tracker.rb_iphone
+      state: not_home
+    - condition: state
+      entity_id: device_tracker.je_iphone
+      state: not_home
   action:
-  - alias: Intruder Alert - Front Door
-    data:
-      message: Front door opened when nobody is home
-      title: Front Door
-    service: notify.ios_je_iphone
+    - alias: Intruder Alert - Front Door
+      data:
+        message: Front door opened when nobody is home
+        title: Front Door
+      service: notify.ios_je_iphone
 
 - alias: HVAC on and Front Door Open Long
   hide_entity: true
   trigger:
     - entity_id: binary_sensor.front_door_135
       platform: state
-      from: 'off'
-      to: 'on'
-      for: 
+      from: "off"
+      to: "on"
+      for:
         minutes: 10
   condition:
     condition: or
-    conditions: 
+    conditions:
       - condition: and
         conditions:
-        - condition: state
-          entity_id: climate.thermostat_4
-          state: Heat
-        - condition: template
-          value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
+          - condition: state
+            entity_id: climate.thermostat_4
+            state: Heat
+          - condition: template
+            value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
       - condition: and
         conditions:
-        - condition: state
-          entity_id: climate.thermostat_4
-          state: Cool
-        - condition: template
-          value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
+          - condition: state
+            entity_id: climate.thermostat_4
+            state: Cool
+          - condition: template
+            value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
   action:
-  - alias: HVAC Front Door
-    data:
-      message: Front door open and HVAC is running
-      title: HVAC Alert
-    service: notify.ios_je_iphone
+    - alias: HVAC Front Door
+      data:
+        message: Front door open and HVAC is running
+        title: HVAC Alert
+      service: notify.ios_je_iphone

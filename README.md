@@ -8,25 +8,25 @@ integrating them with modern technology and convienence.
 
 ## My Setup:
 
-* Raspberry Pi 3 running Hass.io
-* Vera Controller
-  * X10 CM11a Interface
+- Raspberry Pi 3 running Hass.io
+- Vera Controller
 
-    * Dining Room Chandelier
-    * Kitchen Lights
-    * Guest Bedroom Light
-    * Toaster *(wall plug is not utilized in any automations)
+  - X10 CM11a Interface
 
-  * Z-Wave
+    - Dining Room Chandelier
+    - Kitchen Lights
+    - Guest Bedroom Light
+    - Toaster \*(wall plug is not utilized in any automations)
 
-    * Fibaro Eye
-    * 3 Leviton Plug-In Dimmer Modules
-    * 2 Aeotec Recessed Door Sensors
-    * 2 BeSense Ceiling PIR Motion Detectors
-    * GE Outdoor Module
+  - Z-Wave
 
-* IKEA Trådfri
-  * Bathroom Sink Light
-* Honeywell WiFi Thermostat
-* Amazon Echo Dot
+    - Fibaro Eye
+    - 3 Leviton Plug-In Dimmer Modules
+    - 2 Aeotec Recessed Door Sensors
+    - 2 BeSense Ceiling PIR Motion Detectors
+    - GE Outdoor Module
 
+- IKEA Trådfri
+  - Bathroom Sink Light
+- Honeywell WiFi Thermostat
+- Amazon Echo Dot

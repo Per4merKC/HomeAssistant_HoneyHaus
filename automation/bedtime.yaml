@@ -1,3 +1,4 @@
+---
 - alias: Withings Bedtime
   hide_entity: true
   trigger:
@@ -6,6 +7,6 @@
     event_data:
       action: call_service
   action:
-    service_template: '{{ trigger.event.data.service }}'
+    service_template: "{{ trigger.event.data.service }}"
     data_template:
-      entity_id: '{{ trigger.event.data.entity_id }}'
+      entity_id: "{{ trigger.event.data.entity_id }}"

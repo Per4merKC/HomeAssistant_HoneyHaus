@@ -1,7 +1,8 @@
+---
 - alias: Pwned Status Change
   hide_entity: true
-  initial_state: 'on'
-  trigger: 
+  initial_state: "on"
+  trigger:
     - platform: numeric_state
       entity_id: !secret sensor_email_1
       above: 7
@@ -11,8 +12,8 @@
     - platform: numeric_state
       entity_id: !secret sensor_email_3
       above: 2
-  action: 
+  action:
     service: notify.ios_je_iphone
     data_template:
-      message: 'Warning - HaveIbeenPwned detected {{trigger.to_state.attributes.friendly_name}}'
+      message: "Warning - HaveIbeenPwned detected {{trigger.to_state.attributes.friendly_name}}"
       title: Pwned!

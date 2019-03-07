@@ -2,7 +2,7 @@
 ##  cuckoo Clock simulation.
 ## Plays the number of cuckoos per hour and 1 on the half hour.
 ###################################
-
+---
 - alias: Cuckoo Clock
   hide_entity: true
   trigger:
