@@ -38,3 +38,7 @@ __pycache__/
 # C extensions
 *.so
 *.pickle
+
+# Specific Keep
+!.stubs/secrets.yaml
+
