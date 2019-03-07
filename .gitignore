@@ -40,4 +40,4 @@ __pycache__/
 *.pickle
 
 # Specific Keep
-!.stubs/secrets.yaml
+!/.stubs/secrets.yaml
