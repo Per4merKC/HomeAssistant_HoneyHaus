@@ -41,4 +41,3 @@ __pycache__/
 
 # Specific Keep
 !.stubs/secrets.yaml
-
