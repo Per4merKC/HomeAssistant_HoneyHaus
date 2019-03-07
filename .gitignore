@@ -23,21 +23,23 @@ harmony_media_room.conf
 pyozw.sqlite
 .*
 .uuid
-!/.gitignore
-!/.travis.yml
 html5_push_registrations.conf
 ip_bans.yaml
 /icloud/*
 entity_registry.yaml
 home-assistant_v2.db*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 .DS_Store
-# C extensions
-*.so
-*.pickle
 
 # Specific Keep
 !/.stubs/secrets.yaml
+!/.gitignore
+!/.travis.yml
+
+# C extensions
+*.so
+*.pickle
