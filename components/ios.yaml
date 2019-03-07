@@ -18,23 +18,23 @@ ios:
           - identifier: "BP_TABLET_TAKEN"
             title: "BP Tablet Taken"
             activationMode: "background"
-            authenticationRequired: no
-            destructive: yes
+            authenticationRequired: false
+            destructive: false
           - identifier: "BP_TABLET_SNOOZE"
             title: "BP Tablet Snooze"
             activationMode: "background"
-            authenticationRequired: no
-            destructive: no
+            authenticationRequired: false
+            destructive: false
       - name: Antibiotics
         identifier: "temp_med"
         actions:
           - identifier: "TEMP_MED_TAKEN"
             title: "Med Taken"
             activationMode: "background"
-            authenticationRequired: no
-            destructive: yes
+            authenticationRequired: false
+            destructive: true
           - identifier: "TEMP_MED_SNOOZE"
             title: "Snooze Med"
             activationMode: "background"
-            authenticationRequired: no
-            destructive: no
+            authenticationRequired: false
+            destructive: false

@@ -38,14 +38,28 @@
             entity_id: climate.thermostat_4
             state: Heat
           - condition: template
-            value_template: "{{ states.sensor.weather_temperature.state | float < states.climate.thermostat_4.attributes.temperature | float }}"
+            value_template: >
+              "{{
+                states.sensor.weather_temperature.state
+                |
+                float < states.climate.thermostat_4.attributes.temperature
+                |
+                float
+              }}"
       - condition: and
         conditions:
           - condition: state
             entity_id: climate.thermostat_4
             state: Cool
           - condition: template
-            value_template: "{{ states.sensor.weather_temperature.state | float > states.climate.thermostat_4.attributes.temperature | float }}"
+            value_template: >
+              "{{
+                states.sensor.weather_temperature.state
+                |
+                float > states.climate.thermostat_4.attributes.temperature
+                |
+                float
+              }}"
   action:
     - alias: HVAC Front Door
       data:

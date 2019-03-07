@@ -1,7 +1,7 @@
 ---
 - name: goodnight
   entities:
-    group.all_lights: off
+    group.all_lights: false
 
 - name: goodmorning
   entities:
