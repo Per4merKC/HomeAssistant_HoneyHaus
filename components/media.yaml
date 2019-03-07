@@ -1,6 +1,6 @@
 ---
-media_player:
-  - platform: alexa
-    email: per4merkc@gmail.com
-    password: !secret alexa_password
-    url: amazon.com
+alexa_media:
+  accounts:
+    - email: per4merkc@gmail.com
+      password: !secret alexa_password
+      url: amazon.com
