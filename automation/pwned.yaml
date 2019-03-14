@@ -11,7 +11,7 @@
       above: 2
     - platform: numeric_state
       entity_id: !secret sensor_email_3
-      above: 1
+      above: 2
   action:
     service: notify.ios_je_iphone
     data_template:
