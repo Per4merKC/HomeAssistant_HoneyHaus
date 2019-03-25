@@ -1,5 +1,0 @@
----
-bp_medicine:
-  name: BP Medicine Taken
-  initial: false
-  icon: mdi:pill
